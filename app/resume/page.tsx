@@ -147,7 +147,7 @@ analysis skills further.
 
 {/* Books Section */}
 <section className="max-w-6xl mx-auto py-16">
-  <h2 className="text-3xl font-bold font-montserrat">Books I'm Reading</h2>
+  <h2 className="text-3xl font-bold font-montserrat">Books I&apos;m Reading</h2>
   <div className="grid grid-cols-3 gap-6 mt-6">
     {/* Book 1 */}
     <div className="text-center">

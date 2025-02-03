@@ -105,7 +105,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold font-montserrat">Professional Projects</h2>
         <div className="mt-6 space-y-12">
           <div className="bg-gray-100 p-6 rounded-lg shadow">
-            <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico's Climate Change Mitigation Efforts</h3>
+            <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico&apos;s Climate Change Mitigation Efforts</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Project for Mexico&apos;s Treasury Ministry. In charge of a team of two other junior consultants. Project aimed to support the Mexican government in designing fiscal policies to <strong>reduce greenhouse gas emissions and promote sustainable energy</strong>. The analysis involved evaluating existing policies, identifying international best practices, and offering recommendations for sectors like <strong>electromobility, renewable energy, and waste management</strong>. Excel was used extensively for data modeling, assessing fiscal impacts, and calculating cost-benefit scenarios, while Python with libraries like Pandas and Geopandas was applied for geospatial and statistical analyses, particularly in mapping infrastructure and emissions data. Limited interaction with code scripting.
             </p>
