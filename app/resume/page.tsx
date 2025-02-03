@@ -20,7 +20,7 @@ export default function Resume() {
         <p className="text-lg text-gray-700 mt-4 font-lato">
         Analytical and adaptable professional with <strong>two years of consulting experience</strong> in data insights, policy
 analysis, and project coordination. Skilled at translating complex challenges into clear, actionable
-solutions. Holder of dual <strong>bachelor's degrees in Economics and Government & Public Policy</strong>, plus an 
+solutions. Holder of <strong>BSc in Economics and a BA Government & Public Policy</strong>, plus an 
 <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of the class. Proficient
 in data analytics (Excel, STATA, Python) and data visualization (PowerPoint, Datawrapper, Flourish).
 Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and
@@ -43,7 +43,7 @@ analysis skills further.
           <h2 className="text-3xl font-bold font-montserrat">Education</h2>
           <ul className="mt-4 text-xl space-y-4 text-gray-700 font-lato">
             <li>
-              <strong>Master of Science, Energy & Climate Policy (GPA ~3.8 U.S. equivalent)</strong>      |      University of Sussex
+              <strong>Master of Science, Energy & Climate Policy (GPA 3.8 U.S. equivalent)</strong>      |      University of Sussex
               <br /> SEPTEMBER 2023 | OCTOBER 2024, BRIGHTON, UK
               <ul className="list-disc ml-6 space-y-4">
                 <li><strong>Top Student of the Program (79%)</strong>: Graduated with highest overall mark.</li>
@@ -52,11 +52,11 @@ analysis skills further.
               </ul>
             </li>
             <li>
-              <strong>Bachelor of Arts, Government and Public Policy (GPA ~3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
+              <strong>Bachelor of Arts, Government and Public Policy (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
               <br /> AUGUST 2016 | DECEMBER 2021, MEXICO CITY, MX
             </li>
             <li>
-              <strong>Bachelor of Science, Economics (GPA ~3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
+              <strong>Bachelor of Science, Economics (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
               <br /> AUGUST 2016 | DECEMBER 2020, MEXICO CITY, MX
             </li>
             <li>
@@ -84,7 +84,7 @@ analysis skills further.
               <li>Led a team of two junior consultants on projects for the Mexican Treasury Ministry, designing quantitative models to inform national fiscal and energy policy strategies.</li>
               <li>Oversaw programming and modeling tasks (using Python and Excel) for national-level energy and fiscal policy projects.</li>
               <li>Analyzed large datasets (including survey-based and secondary data) and conducted cost-benefit studies to evaluate incentives for electromobility and renewable energy, working closely with cross-functional teams.</li>
-              <li>Developed fiscal policy recommendations for environmental/social impact mitigation of hydrocarbon exploration, simplifying large datasets into clear, executive-ready presentations.</li>
+              <li>Developed fiscal policy recommendations for environmental and social impact mitigation of hydrocarbon exploration, simplifying large datasets into clear, executive-ready presentations.</li>
               <li>Assessed regulatory constraints for minimum petroleum storage compliance, providing strategic guidance to an international oil client.</li>
             </ul>
           </div>
