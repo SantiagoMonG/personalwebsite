@@ -76,10 +76,12 @@ export default function Projects() {
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Examines the link between electric vehicle production and the demand for critical minerals.
             </p>
-            <video width="100%" height="400" controls className="mt-6">
-              <source src="ev.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+                src="https://drive.google.com/file/d/1nDLBuyk-5IlWRGvmSdcHRXLmRAxQ_5AK/preview"
+                width="100%" 
+                height="400"
+                allow="autoplay"
+            ></iframe>
           </div>
 
           {/* Governing Electric Systems in Mexico */}
@@ -88,10 +90,12 @@ export default function Projects() {
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Discusses the regulatory framework and challenges in governing electric systems in Mexico.
             </p>
-            <video width="100%" height="400" controls className="mt-6">
-              <source src="electricity.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <iframe
+                src="https://drive.google.com/file/d/1GVYWj1ovNyHY6EQw9JWTIPZtLav-p-lH/preview"
+                width="100%" 
+                height="400"
+                allow="autoplay"
+            ></iframe>
           </div>
         </div>
       </section>
