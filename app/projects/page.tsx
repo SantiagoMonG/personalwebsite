@@ -7,11 +7,28 @@ import Image from "next/image";
 export default function Projects() {
   return (
     <div className="max-w-6xl mx-auto py-12 px-6">
+  <Link href="/">
+    <button className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
+      ← Back to Home
+    </button>
+  </Link>
       {/* Page Title */}
       <h1 className="text-5xl font-bold font-montserrat text-center">Projects</h1>
       <p className="text-lg text-gray-700 text-center mt-4">
         A selection of my work in consulting, research, and policy.
       </p>
+
+      <div className="flex space-x-6 mt-6">
+        <Link href="https://substack.com/@samongom" target="_blank">
+          <Image src="/icons/substack.svg" alt="Substack" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+           </Link>
+           <Link href="https://github.com/santiagomong" target="_blank">
+            <Image src="/icons/github2.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          </Link>
+          <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
+            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+        </Link>
+      </div>
 
       {/* Academic Projects Section */}
       <section className="mt-12">
@@ -20,15 +37,13 @@ export default function Projects() {
           {/* Master's Thesis */}
           <div className="bg-gray-100 p-6 rounded-lg shadow flex justify-between justify-text items-start relative">
             <div>
-              <h3 className="text-xl font-semibold">MSc Thesis: Solar Energy Financing in Brazil</h3>
+              <h3 className="text-xl font-semibold">MSc Thesis: Risks, Rates, and Rays: The Financial Realities of Solar Energy in Brazil</h3>
               <ul className="list-disc list-outside pl-5 text-gray-700 mt-2 space-y-2">
-                <li><strong>Solar photovoltaic (PV)</strong> remains the fastest-growing electricity source by capacity, with global additions expected to reach 600 GW in 2024. However, rising interest rates pose a challenge to solar PV&apos;s cost competitiveness.</li>
-                <li><strong>Study Focus:</strong> Analyzes the financial realities of Brazil&apos;s solar energy sector, particularly how financing conditions shape the Levelized Cost of Energy (LCOE) for solar PV projects.</li>
-                <li><strong>WACC Disparity:</strong> Brazil&apos;s Weighted Average Cost of Capital (WACC) remains significantly higher than in developed economies, ranging from 10% to 15%, compared to 2.5% in Germany.</li>
-                <li><strong>Methodology:</strong> Employs a three-tiered framework to estimate the nominal after-tax WACC for solar PV projects in Brazil, compute LCOE for projects awarded in energy auctions from 2014 to 2022, and project future financing scenarios from 2024 to 2029.</li>
-                <li><strong>Findings:</strong> Despite a 35% decline in CAPEX over the study period, financing costs rose from 47% of total project costs in 2014 to 62% in 2022, counteracting reductions in CAPEX and OPEX and limiting improvements in LCOE.</li>
-                <li><strong>Future Projections:</strong> Scenario analysis suggests that financing costs could range between 38% and 55% of total project costs by 2029, contingent on macroeconomic conditions.</li>
-                <li><strong>Innovation:</strong> Introduces intra-annual granularity in WACC estimates to capture short-term economic fluctuations more accurately. Findings underscore the pivotal role of macroeconomic stability and targeted financial strategies in ensuring cost-effective solar PV deployment in Brazil and other emerging markets.</li>
+                <li>Emprirical investigation into the financial realities of Brazil&apos;s solar energy sector</li>
+                <li>Estimating the <i>weighted average cost of capital (WACC) for solar PV projects in Brazil 2014-2024</i>, within a decade of significant macroeconomic change.</li>
+                <li>Introducing <i>intra-annual granularity by estimating monthly WACC values</i>. This addresses shortcomings of yearly or lagging data, capturing short-term fluctuations, and offering a more accurate assessment of financing costs.</li>
+                <li>Calculating the <i>impact of the WACC on LCOE for projects</i> awarded through Brazil&apos;s energy auctions (2014 to 2022), highlighting the influence of financing costs as a limiting factor for solar PV competitiveness, despite falling capital costs.</li>
+                <li>Projecting future financing scenarios (2024 to 2029) and their implications for solar PV costs.</li>
               </ul>
               <iframe
                 src="https://flo.uri.sh/story/2529885/embed"
@@ -43,8 +58,9 @@ export default function Projects() {
               ></iframe>
             </div>
             <div className="flex flex-col space-y-2">
-              <a href="/public/thesis.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download PDF</a>
-              <a href="https://zenodo.org/code_link" target="_blank" className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">View Code</a>
+              <a href="thesis.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download Thesis</a>
+              <a href="risksratesrays.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download Article Under Review</a>
+              <a href="https://zenodo.org/records/14529054" target="_blank" className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">View Code</a>
             </div>
           </div>
 
@@ -164,15 +180,8 @@ export default function Projects() {
       {/* Bottom Navigation Bar */}
       <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-4 mt-8 flex justify-between items-center px-12">
         <div className="flex space-x-6">
-          <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
-          </Link>
-          <Link href="https://github.com/santiagomong" target="_blank">
-            <Image src="/icons/github2.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
-          </Link>
-          <Link href="https://substack.com/@samongom" target="_blank">
-            <Image src="/icons/substack.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
-          </Link>
+          <Image src="/icons/mail.svg" alt="Mail" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          <span>santiagomong@gmail.com</span>
         </div>
         <div className="flex items-center space-x-2">
           <Image src="/icons/phone2.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
