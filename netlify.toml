@@ -2,7 +2,3 @@
   command = "npm run build"
   publish = ".next"
   node_version = "22.13.1"
-
-
-[environment]
-  GO_VERSION = "off"
