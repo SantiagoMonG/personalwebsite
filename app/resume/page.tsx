@@ -1,13 +1,10 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import { useTheme } from "next-themes";
 
 export default function Resume() {
-  const { theme, setTheme } = useTheme();
   return (
     <div className="bg-white text-black">
       {/* Header Section */}
@@ -23,7 +20,7 @@ export default function Resume() {
         <p className="text-lg text-gray-700 mt-4 font-lato">
         Analytical and adaptable professional with <strong>two years of consulting experience</strong> in data insights, policy
 analysis, and project coordination. Skilled at translating complex challenges into clear, actionable
-solutions. Holder of dual <strong>bachelor’s degrees in Economics and Government & Public Policy</strong>, plus an 
+solutions. Holder of dual <strong>bachelor's degrees in Economics and Government & Public Policy</strong>, plus an 
 <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of the class. Proficient
 in data analytics (Excel, STATA, Python) and data visualization (PowerPoint, Datawrapper, Flourish).
 Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and
@@ -47,7 +44,7 @@ analysis skills further.
           <ul className="mt-4 text-xl space-y-4 text-gray-700 font-lato">
             <li>
               <strong>Master of Science, Energy & Climate Policy (GPA ~3.8 U.S. equivalent)</strong>      |      University of Sussex
-              <br /> SEPTEMBER 2023 – OCTOBER 2024, BRIGHTON, UK
+              <br /> SEPTEMBER 2023 | OCTOBER 2024, BRIGHTON, UK
               <ul className="list-disc ml-6 space-y-4">
                 <li><strong>Top Student of the Program (79%)</strong>: Graduated with highest overall mark.</li>
                 <li><strong>Thesis (Highest Grade: 92%)</strong>: Applied Python-based analysis to examine how macroeconomic factors (interest rates, inflation) influence the cost of capital for solar PV projects in Brazil, discovering that rising financing costs constrained potential LCOE reductions despite technological advancements.</li>
@@ -56,20 +53,20 @@ analysis skills further.
             </li>
             <li>
               <strong>Bachelor of Arts, Government and Public Policy (GPA ~3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> AUGUST 2016 – DECEMBER 2021, MEXICO CITY, MX
+              <br /> AUGUST 2016 | DECEMBER 2021, MEXICO CITY, MX
             </li>
             <li>
               <strong>Bachelor of Science, Economics (GPA ~3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> AUGUST 2016 – DECEMBER 2020, MEXICO CITY, MX
+              <br /> AUGUST 2016 | DECEMBER 2020, MEXICO CITY, MX
             </li>
             <li>
               <strong>Other notable courses (non-exhaustive)</strong>:
               <ul className="list-disc ml-6 italic space-y-2">
-                <li>Economics of Transformative AI – BlueDot Impact (Feb 2025 – Apr 2025)</li>
-                <li>Bloomberg Finance Fundamentals – Bloomberg for Education (2025)</li>
-                <li>Bloomberg Market Concepts – Bloomberg for Education (2024)</li>
-                <li>The Data Analyst Course (Python) – Udemy (2024)</li>
-                <li>The Essential Guide to Stata – Udemy (2024)</li>
+                <li>Economics of Transformative AI | BlueDot Impact (Feb 2025 | Apr 2025)</li>
+                <li>Bloomberg Finance Fundamentals | Bloomberg for Education (2025)</li>
+                <li>Bloomberg Market Concepts | Bloomberg for Education (2024)</li>
+                <li>The Data Analyst Course (Python) | Udemy (2024)</li>
+                <li>The Essential Guide to Stata | Udemy (2024)</li>
               </ul>
             </li>
           </ul>

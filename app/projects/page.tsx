@@ -20,11 +20,11 @@ export default function Projects() {
           {/* Master's Thesis */}
           <div className="bg-gray-100 p-6 rounded-lg shadow flex justify-between justify-text items-start relative">
             <div>
-              <h3 className="text-xl font-semibold">Master’s Thesis: Solar Energy Financing in Brazil</h3>
+              <h3 className="text-xl font-semibold">Master's Thesis: Solar Energy Financing in Brazil</h3>
               <ul className="list-disc list-outside pl-5 text-gray-700 mt-2 space-y-2">
-                <li><strong>Solar photovoltaic (PV)</strong> is the fastest growing electricity source by capacity, with global additions reaching 600 GW in 2024. At the same time, rising interest rates adversely affect solar PV’s competitiveness.</li>
+                <li><strong>Solar photovoltaic (PV)</strong> is the fastest growing electricity source by capacity, with global additions reaching 600 GW in 2024. At the same time, rising interest rates adversely affect solar PV's competitiveness.</li>
                 <li><strong>Study Focus:</strong> Examines the financial dynamics of Brazil's solar energy sector, focusing on how financing conditions impact the Levelised Cost of Energy (LCOE) for solar PV projects.</li>
-                <li><strong>WACC Disparity:</strong> Brazil’s Weighted Average Cost of Capital (WACC) is significantly higher than in advanced economies, ranging from 10%–15% compared to 2.5% in Germany.</li>
+                <li><strong>WACC Disparity:</strong> Brazil's Weighted Average Cost of Capital (WACC) is significantly higher than in advanced economies, ranging from 10% to 15% compared to 2.5% in Germany.</li>
                 <li><strong>Methodology:</strong> Utilizes a three-tiered approach to estimate the nominal after-tax WACC for solar PV projects in Brazil, calculate LCOE for projects awarded in energy auctions from 2014 to 2022, and project financing scenarios for 2024 to 2029.</li>
                 <li><strong>Findings:</strong> Despite a 35% decline in CAPEX over the study period, financing costs increased from 47% of total project costs in 2014 to 62% in 2022, offsetting CAPEX and OPEX reductions and limiting LCOE improvements.</li>
                 <li><strong>Future Projections:</strong> Scenario analysis predicts that financing costs could range from 38% to 55% of total project costs by 2029, depending on macroeconomic conditions.</li>
@@ -64,7 +64,7 @@ export default function Projects() {
             <div>
               <h3 className="text-xl font-semibold">Governing Energy Transitions</h3>
               <p className="text-gray-700 mt-2">
-                This essay explores the United States' transition to electric vehicles (EVs) under the Biden administration, focusing on governance challenges and political dynamics. It highlights Biden’s ambitious climate agenda, including the Bipartisan Infrastructure Law and the Inflation Reduction Act, which combine legislative incentives and regulatory standards to promote EV adoption. However, Biden faces significant obstacles such as political polarization, resistance from fossil fuel interests, and public skepticism about EVs.
+                This essay explores the United States' transition to electric vehicles (EVs) under the Biden administration, focusing on governance challenges and political dynamics. It highlights Biden's ambitious climate agenda, including the Bipartisan Infrastructure Law and the Inflation Reduction Act, which combine legislative incentives and regulatory standards to promote EV adoption. However, Biden faces significant obstacles such as political polarization, resistance from fossil fuel interests, and public skepticism about EVs.
               </p>
             </div>
             <a href="/governing.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download PDF</a>
@@ -105,7 +105,7 @@ export default function Projects() {
         <h2 className="text-3xl font-bold font-montserrat">Professional Projects</h2>
         <div className="mt-6 space-y-12">
           <div className="bg-gray-100 p-6 rounded-lg shadow">
-            <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico’s Climate Change Mitigation Efforts</h3>
+            <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico's Climate Change Mitigation Efforts</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Project for Mexico's Treasury Ministry. In charge of a team of two other junior consultants. Project aimed to support the Mexican government in designing fiscal policies to <strong>reduce greenhouse gas emissions and promote sustainable energy</strong>. The analysis involved evaluating existing policies, identifying international best practices, and offering recommendations for sectors like <strong>electromobility, renewable energy, and waste management</strong>. Excel was used extensively for data modeling, assessing fiscal impacts, and calculating cost-benefit scenarios, while Python with libraries like Pandas and Geopandas was applied for geospatial and statistical analyses, particularly in mapping infrastructure and emissions data. Limited interaction with code scripting.
             </p>
@@ -125,7 +125,7 @@ export default function Projects() {
           <div className="bg-gray-100 p-6 rounded-lg shadow">
             <h3 className="text-xl font-semibold">Evaluation of the Fiscal Instrument to Compensate for Social and Environmental Damage from Hydrocarbon Exploration and Extraction Activities</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
-              Project for Mexico's Treasury Ministry. In charge of a team of two other junior consultants. Project evaluated the fiscal instrument used to <strong>mitigate social and environmental damage caused by hydrocarbon exploration and extraction</strong> in Mexico. It focused on analyzing the current fiscal framework, particularly the Hydrocarbon Exploration and Extraction Activity Tax (IAEEH) and the Fund for Federal Entities and Municipalities that Produce Hydrocarbons. The study provided a detailed assessment of the legal, social, economic, and environmental impacts of hydrocarbon activities, offering <strong>recommendations to improve the compensation mechanisms</strong>. International best practices from countries like Norway and Alaska were reviewed to draw comparisons and suggest <strong>potential reforms to enhance Mexico’s fiscal response to these environmental and social impacts</strong>.
+              Project for Mexico's Treasury Ministry. In charge of a team of two other junior consultants. Project evaluated the fiscal instrument used to <strong>mitigate social and environmental damage caused by hydrocarbon exploration and extraction</strong> in Mexico. It focused on analyzing the current fiscal framework, particularly the Hydrocarbon Exploration and Extraction Activity Tax (IAEEH) and the Fund for Federal Entities and Municipalities that Produce Hydrocarbons. The study provided a detailed assessment of the legal, social, economic, and environmental impacts of hydrocarbon activities, offering <strong>recommendations to improve the compensation mechanisms</strong>. International best practices from countries like Norway and Alaska were reviewed to draw comparisons and suggest <strong>potential reforms to enhance Mexico's fiscal response to these environmental and social impacts</strong>.
               Excel and Python were used for financial modeling, data analysis, and visualization to assess the economic impacts and fiscal distribution of resources. Limited interaction with code scripting.
             </p>
             <iframe
@@ -144,7 +144,7 @@ export default function Projects() {
           <div className="bg-gray-100 p-6 rounded-lg shadow">
             <h3 className="text-xl font-semibold">Minimum Storage of Petroleum Products Policy</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
-              This project was conducted for an international private oil company. This project focuses on the challenges private companies face in complying with Mexico’s Public Policy on Minimum Storage of Petroleum Products (PPAMP), which was introduced to ensure energy security by mandating minimum levels of fuel storage (gasoline, diesel, and jet fuel). The study highlights structural issues in Mexico’s storage infrastructure, such as PEMEX's market dominance, limited private sector involvement, and regulatory inconsistencies. The analysis identifies significant barriers to competition, including restricted access to storage infrastructure and concentrated market control by PEMEX, limiting private companies' ability to meet policy requirements.
+              This project was conducted for an international private oil company. This project focuses on the challenges private companies face in complying with Mexico's Public Policy on Minimum Storage of Petroleum Products (PPAMP), which was introduced to ensure energy security by mandating minimum levels of fuel storage (gasoline, diesel, and jet fuel). The study highlights structural issues in Mexico's storage infrastructure, such as PEMEX's market dominance, limited private sector involvement, and regulatory inconsistencies. The analysis identifies significant barriers to competition, including restricted access to storage infrastructure and concentrated market control by PEMEX, limiting private companies' ability to meet policy requirements.
             </p>
             <iframe
               src="https://1drv.ms/p/s!AlTYd39_V2-QjKUkPdmg2XJJid2apQ?embed=1&amp;em=2&amp;wdAr=1.7777777777777777"
