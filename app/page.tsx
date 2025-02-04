@@ -29,7 +29,7 @@ export default function Home() {
           initial="hidden"
           animate="visible"
         >
-          I&apos;m Santiago Monroy
+          Santiago Monroy
         </motion.p>
         <motion.div
           className="flex items-baseline space-x-6"
