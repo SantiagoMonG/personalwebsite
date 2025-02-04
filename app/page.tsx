@@ -38,9 +38,9 @@ export default function Home() {
           animate="visible"
         >
           <TypeAnimation
-            sequence={["Hello...", 1500, "Hello", 1000, "Hello, there", 3000]}
+            sequence={["Economics |", 1000, "Data Analysis |", 1000, "Data Analysis | Economics |", 1000, "Data Analysis | Economics | Energy & Technology Policy", 3000]}
             wrapper="h1"
-            className="text-3xl font-mono text-dark font-bold"
+            className="text-3xl font-montserrat text-dark font-bold"
             repeat={Infinity}
           />
         </motion.div>
