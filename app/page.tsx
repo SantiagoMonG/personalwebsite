@@ -45,14 +45,6 @@ export default function Home() {
           />
         </motion.div>
         <motion.p
-          className="text-xl font-lato text-dark text-justify"
-          variants={container}
-          initial="hidden"
-          animate="visible"
-        >
-          Economics | Data & Insights | Energy & Technology | Policy
-        </motion.p>
-        <motion.p
           className="text-lg max-w-3xl mt-2 font-lato text-dark text-justify"
           variants={container}
           initial="hidden"
