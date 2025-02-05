@@ -84,8 +84,7 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">About me</h2>
             <p className="text-dark mt-4 leading-relaxed text-justify">
-              Santiago Monroy is an analytical, driven, and multidisciplinary professional passionate about energy policy, climate finance, and international development.
-              With a background in <strong>economics, policy, and technology</strong>, he bridges data-driven insights with impactful solutions for energy transitions.
+              I&apos;m an analytical, driven, and multidisciplinary professional passionate about <strong>data-driven insights with impactful solutions</strong>, and <strong>energy & technology policy</strong>. Over <strong>two years of consultancy experience</strong> where I evolved from an analyst to managing a small team, I excel in delivering actionable insights based on robust quantitative methods, modeling, and large data analysis. Dynamic, data-savvy energy policy analyst with a proven track record of shaping highlevel fiscal and energy strategies. Dual bachelor&apos;s degrees in <strong>Economics and Public Policy</strong>, plus an <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of my class and securing the highest thesis grade. Proficient in data analytics <strong>(Excel, STATA, Python)</strong> and data visualization <strong>(PowerPoint, Datawrapper, Flourish)</strong>. Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and coordinating stakeholder relationships. Fluent in <strong>Spanish, English, and French</strong>, having lived in four countries. Fully <strong>authorized to work in the U.S.</strong> and eager to contribute to research and hone my data analysis skills further. 
             </p>
           </div>
 
@@ -93,8 +92,8 @@ export default function Home() {
           <div>
             <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">My Approach to Work</h2>
             <p className="text-dark mt-4 leading-relaxed text-justify">
-              I believe in <strong>data-driven decision-making</strong>, leveraging <strong>cross-functional collaboration</strong> to develop effective and sustainable policies.
-              My experience in consulting and research has shaped my ability to distill complex topics into actionable strategies.
+              I believe in <strong>data-driven decision-making</strong>, leveraging <strong>cross-functional collaboration</strong> to develop effective and evidence-based policies.
+              My experience in consulting and research has shaped my ability to distill complex topics into actionable strategies. Skilled in regression analysis, data visualization, and research synthesis, with a track record of producing high-quality deliverables for government agencies and private sector clients.
             </p>
           </div>
 
