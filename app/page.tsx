@@ -95,33 +95,36 @@ export default function Home() {
               I believe in <strong>data-driven decision-making</strong>, leveraging <strong>cross-functional collaboration</strong> to develop effective and evidence-based policies.
               My experience in consulting and research has shaped my ability to distill complex topics into actionable strategies. Skilled in regression analysis, data visualization, and research synthesis, with a track record of producing high-quality deliverables for government agencies and private sector clients.
             </p>
-          </div>
 
-          {/* My Roles */}
-          <div className="mt-6">
-            <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">Roles</h2>
-            <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2">
-              <li>Energy & Climate Policy Analyst</li>
-              <li>Data & Market Researcher</li>
-              <li>Public Policy Consultant</li>
-            </ul>
-          </div>
+          {/* Two-Columns*/}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div>
+              <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">Roles</h2>
+              <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2">
+                <li>Public Policy Researcher</li>
+                <li>Consultant</li>
+                <li>Data Analyst</li>
+              </ul>
+            </div>
 
-          {/* Education */}
-          <div className="mt-6 space-y-4">
-            <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">Education</h2>
-            <p className="text-dark mt-2 leading-relaxed text-justify">
-              MSc in Energy & Climate Policy - <strong>University of Sussex</strong>
-            </p>
-            <p className="text-dark mt-1 leading-relaxed text-justify">
-              BA in Government & Public Policy - <strong>Universidad Panamericana</strong>
-            </p>
-            <p className="text-dark mt-1 leading-relaxed text-justify">
-              BSc in Economics - <strong>Universidad Panamericana</strong>
-            </p>
-          </div>
-        </motion.section>
+            <div>
+          <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">
+            Education
+          </h2>
+          <p className="text-dark mt-2 leading-relaxed text-justify">
+            MSc in Energy & Climate Policy - <strong>University of Sussex</strong>
+          </p>
+          <p className="text-dark mt-1 leading-relaxed text-justify">
+            BA in Government & Public Policy - <strong>Universidad Panamericana</strong>
+          </p>
+          <p className="text-dark mt-1 leading-relaxed text-justify">
+            BSc in Economics - <strong>Universidad Panamericana</strong>
+          </p>
+        </div>
       </div>
+    </div>
+  </motion.section>
+</div>
       
       {/* Bottom Navigation Bar */}
       <footer className="w-full text-dark py-4 mt-8 flex justify-between items-center px-12">
