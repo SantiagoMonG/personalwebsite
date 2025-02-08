@@ -107,10 +107,11 @@ export default function Projects() {
               Discusses the regulatory framework and challenges in governing electric systems in Mexico.
             </p>
             <iframe
-                src="https://drive.google.com/file/d/1GVYWj1ovNyHY6EQw9JWTIPZtLav-p-lH/preview"
+                src="/electricity-systems/index.html"
                 width="100%" 
-                height="400"
-                allow="autoplay"
+                height="540"
+                frameBorder="0"
+                allowFullScreen
             ></iframe>
           </div>
         </div>
