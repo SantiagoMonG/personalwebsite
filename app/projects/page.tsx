@@ -20,13 +20,13 @@ export default function Projects() {
 
       <div className="flex space-x-6 mt-6">
         <Link href="https://substack.com/@samongom" target="_blank">
-          <Image src="/icons/substack.svg" alt="Substack" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          <Image src="/icons/substack2.svg" alt="Substack" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
            </Link>
            <Link href="https://github.com/santiagomong" target="_blank">
             <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
         </Link>
       </div>
 

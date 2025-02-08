@@ -203,13 +203,13 @@ analysis skills further.
       <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-4 mt-8 flex justify-between items-center px-12">
         <div className="flex space-x-6">
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://github.com/santiagomong" target="_blank">
             <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://substack.com/@samongom" target="_blank">
-            <Image src="/icons/substack.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
         </div>
         <div className="flex items-center space-x-2">
