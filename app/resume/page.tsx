@@ -206,7 +206,7 @@ analysis skills further.
             <Image src="/icons/linkedin.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://github.com/santiagomong" target="_blank">
-            <Image src="/icons/github2.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://substack.com/@samongom" target="_blank">
             <Image src="/icons/substack.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
