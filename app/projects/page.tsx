@@ -33,9 +33,9 @@ export default function Projects() {
       {/* Academic Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Academic Projects</h2>
-        <div className="mt-6 space-y-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
           {/* Master's Thesis */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow flex justify-between justify-text items-start relative">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <div>
               <h3 className="text-xl font-semibold">MSc Thesis: Risks, Rates, and Rays: The Financial Realities of Solar Energy in Brazil</h3>
               <ul className="list-disc list-outside pl-5 text-gray-700 mt-2 space-y-2">
@@ -65,7 +65,7 @@ export default function Projects() {
           </div>
 
           {/* Energy Policy: Mexico’s EV Transition */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow flex justify-between items-start relative">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <div>
               <h3 className="text-xl font-semibold">Science, Technology & Innovation</h3>
               <p className="text-gray-700 mt-2">
@@ -76,7 +76,7 @@ export default function Projects() {
           </div>
 
           {/* Governing Energy Transitions */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow flex justify-between items-start relative">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <div>
               <h3 className="text-xl font-semibold">Governing Energy Transitions</h3>
               <p className="text-gray-700 mt-2">
@@ -87,7 +87,7 @@ export default function Projects() {
           </div>
 
           {/* Electric Vehicles and Critical Minerals */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Electric Vehicles and Critical Minerals</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Examines the link between electric vehicle production and the demand for critical minerals.
@@ -101,7 +101,7 @@ export default function Projects() {
           </div>
 
           {/* Governing Electric Systems in Mexico */}
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Governing Electric Systems in Mexico</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Discusses the regulatory framework and challenges in governing electric systems in Mexico.
@@ -120,8 +120,8 @@ export default function Projects() {
       {/* Professional Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Professional Projects</h2>
-        <div className="mt-6 space-y-12">
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico&apos;s Climate Change Mitigation Efforts</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Project for Mexico&apos;s Treasury Ministry. In charge of a team of two other junior consultants. Project aimed to support the Mexican government in designing fiscal policies to <strong>reduce greenhouse gas emissions and promote sustainable energy</strong>. The analysis involved evaluating existing policies, identifying international best practices, and offering recommendations for sectors like <strong>electromobility, renewable energy, and waste management</strong>. Excel was used extensively for data modeling, assessing fiscal impacts, and calculating cost-benefit scenarios, while Python with libraries like Pandas and Geopandas was applied for geospatial and statistical analyses, particularly in mapping infrastructure and emissions data. Limited interaction with code scripting.
@@ -139,7 +139,7 @@ export default function Projects() {
             ></iframe>
           </div>
 
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Evaluation of the Fiscal Instrument to Compensate for Social and Environmental Damage from Hydrocarbon Exploration and Extraction Activities</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               Project for Mexico&apos;s Treasury Ministry. In charge of a team of two other junior consultants. Project evaluated the fiscal instrument used to <strong>mitigate social and environmental damage caused by hydrocarbon exploration and extraction</strong> in Mexico. It focused on analyzing the current fiscal framework, particularly the Hydrocarbon Exploration and Extraction Activity Tax (IAEEH) and the Fund for Federal Entities and Municipalities that Produce Hydrocarbons. The study provided a detailed assessment of the legal, social, economic, and environmental impacts of hydrocarbon activities, offering <strong>recommendations to improve the compensation mechanisms</strong>. International best practices from countries like Norway and Alaska were reviewed to draw comparisons and suggest <strong>potential reforms to enhance Mexico&apos;s fiscal response to these environmental and social impacts</strong>.
@@ -158,7 +158,7 @@ export default function Projects() {
             ></iframe>
           </div>
 
-          <div className="bg-gray-100 p-6 rounded-lg shadow">
+          <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Minimum Storage of Petroleum Products Policy</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
               This project was conducted for an international private oil company. This project focuses on the challenges private companies face in complying with Mexico&apos;s Public Policy on Minimum Storage of Petroleum Products (PPAMP), which was introduced to ensure energy security by mandating minimum levels of fuel storage (gasoline, diesel, and jet fuel). The study highlights structural issues in Mexico&apos;s storage infrastructure, such as PEMEX&apos;s market dominance, limited private sector involvement, and regulatory inconsistencies. The analysis identifies significant barriers to competition, including restricted access to storage infrastructure and concentrated market control by PEMEX, limiting private companies&apos; ability to meet policy requirements.
