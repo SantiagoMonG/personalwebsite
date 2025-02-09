@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div className="max-w-6xl mx-auto py-12 px-6">
   <Link href="/">
-    <button className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
+    <button className="underline text-blue-800 hover:font-bold">
       ← Back to Home
     </button>
   </Link>
@@ -26,14 +26,14 @@ export default function Projects() {
             <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={44} height={44} className="hover:invert hover:scale-110 filter transition duration-300" />
         </Link>
       </div>
 
       {/* Academic Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Academic Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 mt-6">
           {/* Master's Thesis */}
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <div>
@@ -121,7 +121,7 @@ export default function Projects() {
       {/* Professional Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Professional Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6">
+        <div className="grid md:grid-cols-1 lg:grid-cols-1 gap-8 mt-6">
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico&apos;s Climate Change Mitigation Efforts</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
