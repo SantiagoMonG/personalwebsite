@@ -93,10 +93,11 @@ export default function Projects() {
               Examines the link between electric vehicle production and the demand for critical minerals.
             </p>
             <iframe
-                src="https://drive.google.com/file/d/1nDLBuyk-5IlWRGvmSdcHRXLmRAxQ_5AK/preview"
+                src="/ev-project/index.html"
                 width="100%" 
-                height="400"
-                allow="autoplay"
+                height="540"
+                frameBorder="0"
+                allowFullScreen
             ></iframe>
           </div>
 
