@@ -13,9 +13,9 @@ export default function Projects() {
     </button>
   </Link>
       {/* Page Title */}
-      <h1 className="text-5xl font-bold font-montserrat text-center">Projects</h1>
+      <h1 className="text-5xl font-bold font-montserrat text-center">Research, writing & data visualisations</h1>
       <p className="text-lg text-gray-700 text-center mt-4">
-        A selection of my work in consulting, research, and policy.
+        A selection of my professional and academic projects, research, and some other stuff.
       </p>
 
       <div className="flex space-x-6 mt-6">
@@ -33,7 +33,7 @@ export default function Projects() {
       {/* Academic Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Academic Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6">
           {/* Master's Thesis */}
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <div>
@@ -58,9 +58,9 @@ export default function Projects() {
               ></iframe>
             </div>
             <div className="flex flex-col space-y-2">
-              <a href="thesis.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download Thesis</a>
-              <a href="risksratesrays.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download Article Under Review</a>
-              <a href="https://zenodo.org/records/14529054" target="_blank" className="bg-gradient-to-r from-green-400 to-green-800 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">View Code</a>
+              <a href="thesis.pdf" download className="underline text-blue-800 hover:font-bold hover:text">Download Thesis</a>
+              <a href="risksratesrays.pdf" download className="underline text-blue-800 hover:font-bold">Download Article Under Review</a>
+              <a href="https://zenodo.org/records/14529054" target="_blank" className="underline text-blue-800 hover:font-bold">View Code</a>
             </div>
           </div>
 
@@ -72,7 +72,7 @@ export default function Projects() {
                 This essay explores Mexico&apos;s transition from manufacturing internal combustion engine (ICE) vehicles to electric vehicles (EVs) in the context of global market trends and innovation policies. It highlights Mexico&apos;s competitive advantages, such as its proximity to the U.S., low labor costs, and specialized workforce, positioning it as a key player in the automotive industry. The paper emphasizes the challenges of overcoming path dependency in ICE manufacturing and the potential for Mexico to leverage economies of scale and learning economies to shift towards EV production.
               </p>
             </div>
-            <a href="innovation.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download PDF</a>
+            <a href="innovation.pdf" download className="underline text-blue-800 hover:font-bold">Download PDF</a>
           </div>
 
           {/* Governing Energy Transitions */}
@@ -83,14 +83,14 @@ export default function Projects() {
                 This essay explores the United States&apos; transition to electric vehicles (EVs) under the Biden administration, focusing on governance challenges and political dynamics. It highlights Biden&apos;s ambitious climate agenda, including the Bipartisan Infrastructure Law and the Inflation Reduction Act, which combine legislative incentives and regulatory standards to promote EV adoption. However, Biden faces significant obstacles such as political polarization, resistance from fossil fuel interests, and public skepticism about EVs.
               </p>
             </div>
-            <a href="/governing.pdf" download className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-4 py-2 rounded-md font-semibold text-center hover:scale-110">Download PDF</a>
+            <a href="/governing.pdf" download className="underline text-blue-800 hover:font-bold">Download PDF</a>
           </div>
 
           {/* Electric Vehicles and Critical Minerals */}
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Electric Vehicles and Critical Minerals</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
-              Examines the link between electric vehicle production and the demand for critical minerals.
+              Demo of academic presentation on Electric Vehicles and its challenges.
             </p>
             <iframe
                 src="/ev-project/index.html"
@@ -105,7 +105,7 @@ export default function Projects() {
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Governing Electric Systems in Mexico</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
-              Discusses the regulatory framework and challenges in governing electric systems in Mexico.
+              Demo of academic presentation on historic developments and challenges in electric systems in Mexico.
             </p>
             <iframe
                 src="/electricity-systems/index.html"
@@ -121,7 +121,7 @@ export default function Projects() {
       {/* Professional Projects Section */}
       <section className="mt-12">
         <h2 className="text-3xl font-bold font-montserrat">Professional Projects</h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 mt-6">
           <div className="relative border border-gray-300 rounded-lg p-6 shadow-lg overflow-hidden">
             <h3 className="text-xl font-semibold">Implementation of Fiscal Policies to Strengthen Mexico&apos;s Climate Change Mitigation Efforts</h3>
             <p className="text-gray-700 mt-2 text-justify mb-6">
