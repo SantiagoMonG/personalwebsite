@@ -256,16 +256,20 @@ export default function Resume() {
   </section>
 
 {/* Bottom Navigation Bar */}
-  <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-4 mt-8 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 text-center md:text-left">
-   <div className="flex space-x-4 md:space-x-6">
-      <Image src="/icons/mail2.svg" alt="Mail" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
-      <span className="text-sm md:text-base">santiagomong@gmail.com</span>
-    </div>
-   <div className="flex items-center space-x-2 mt-2 md:mt-0">
-      <Image src="/icons/phone3.svg" alt="Phone" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
-      <span className="text-sm md:text-base">+1-(346)-823-0454</span>
-    </div>
-  </footer>
+      <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
+        <div className="flex space-x-6">
+          <Image src="/icons/mail2.svg" alt="Mail" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+          <a href="mailto:santiagomong@gmail.com" className="hover:underline">
+            santiagomong@gmail.com
+          </a>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+          <a href="tel:+13468230454" className="hover:underline">
+            +1-(346)-823-0454
+          </a>
+        </div>
+      </footer>
    </>
   );
 }

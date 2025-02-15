@@ -282,11 +282,19 @@ export default function Resume() {
             <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
         </div>
-        <div className="flex items-center space-x-2">
-          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
-          <span>+1-(346)-823-0454</span>
-        </div>
-      </footer>
+              <div className="flex items-center space-x-2">
+                <Image src="/icons/mail2.svg" alt="Mail" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+                <a href="mailto:santiagomong@gmail.com" className="hover:underline">
+                  santiagomong@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+                <a href="tel:+13468230454" className="hover:underline">
+                  +1-(346)-823-0454
+                </a>
+              </div>
+            </footer>
     </div>
     </>
   );
