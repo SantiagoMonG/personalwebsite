@@ -57,7 +57,7 @@ export default function Projects() {
       {/* Page Title */}
       <div className="text-center px-4 md:px-6 mt-6">
   <h1 className="text-2xl md:text-3xl font-bold font-montserrat">
-    Research, Writing & Data Visualisations
+    Research, Writing & Data Visualizations
   </h1>
   <p className="text-sm md:text-lg text-gray-700 mt-4">
     A selection of my professional and academic projects, research, and some other stuff.
@@ -181,7 +181,7 @@ export default function Projects() {
         </h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
           Project for Mexico&apos;s Treasury Ministry. Led a team of two consultants to design fiscal policies to 
-          <strong>reduce greenhouse gas emissions</strong> and promote sustainable energy. Used Python (Pandas, Geopandas) 
+          <strong> reduce greenhouse gas emissions</strong> and promote sustainable energy. Used Python (Pandas, Geopandas) 
           and Excel for data modeling and geospatial analysis.
         </p>
         <iframe
@@ -241,11 +241,11 @@ export default function Projects() {
 {/* Bottom Navigation Bar */}
   <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-4 mt-8 flex flex-col md:flex-row justify-between items-center px-6 md:px-12 text-center md:text-left">
    <div className="flex space-x-4 md:space-x-6">
-      <Image src="/icons/mail.svg" alt="Mail" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
+      <Image src="/icons/mail2.svg" alt="Mail" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
       <span className="text-sm md:text-base">santiagomong@gmail.com</span>
     </div>
    <div className="flex items-center space-x-2 mt-2 md:mt-0">
-      <Image src="/icons/phone2.svg" alt="Phone" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
+      <Image src="/icons/phone3.svg" alt="Phone" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
       <span className="text-sm md:text-base">+1-(346)-823-0454</span>
     </div>
   </footer>

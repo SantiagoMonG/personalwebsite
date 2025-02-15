@@ -126,7 +126,7 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">My Approach to Work</h2>
             <p className="text-dark mt-4 leading-relaxed text-justify text-sm md:text-base">
               I believe in <strong>data-driven decision-making</strong>, leveraging 
-              <strong>cross-functional collaboration</strong> to develop effective and evidence-based policies.
+              <strong> cross-functional collaboration</strong> to develop effective and evidence-based policies.
               My experience in consulting and research has shaped my ability to distill complex 
               topics into actionable strategies. Skilled in regression analysis, data visualization, 
               and research synthesis, with a track record of producing high-quality deliverables 
@@ -166,11 +166,11 @@ export default function Home() {
       {/* Bottom Navigation Bar */}
       <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
         <div className="flex space-x-6">
-          <Image src="/icons/mail.svg" alt="Mail" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          <Image src="/icons/mail2.svg" alt="Mail" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           <span>santiagomong@gmail.com</span>
         </div>
         <div className="flex items-center space-x-2">
-          <Image src="/icons/phone2.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           <span>+1-(346)-823-0454</span>
         </div>
       </footer>

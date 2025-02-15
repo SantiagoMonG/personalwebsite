@@ -55,23 +55,22 @@ export default function Resume() {
     </nav>
 
   
-    <div className="bg-white text-black">
+    <div className="bg-white text-black px-4 md:px-0">
       {/* Header Section */}
-      <section className="max-w-4xl mx-auto py-16 text-center">
-        <p className="text-lg text-gray-700 mt-4 font-lato">
-        Analytical and adaptable professional with <strong>two years of consulting experience</strong> in data insights, policy
-analysis, and project coordination. Skilled at translating complex challenges into clear, actionable
-solutions. Holder of <strong>BSc in Economics and a BA Government & Public Policy</strong>, plus an 
-<strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of the class. Proficient
-in data analytics (Excel, STATA, Python) and data visualization (PowerPoint, Datawrapper, Flourish).
-Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and
-coordinating stakeholder relationships. Fluent in <strong>Spanish, English, and French,</strong> having lived in four
-countries. <strong>Fully authorized to work in the U.S.</strong> and eager to contribute to research and hone my data
-analysis skills further.
+      <section className="max-w-4xl mx-auto py-10 md:py-16 text-center">
+        <p className="text-base md:text-lg text-gray-700 mt-4 font-lato leading-relaxed">
+        Analytical and adaptable professional with <strong>three years of experience</strong> in 
+        data insights, policy analysis, and project coordination. Skilled at translating complex challenges into 
+        clear, actionable solutions. Holder of <strong>BSc in Economics and a BA Government & Public Policy</strong>, 
+        plus an <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of the class. 
+        Proficient in data analytics (Excel, STATA, Python) and data visualization (PowerPoint, Datawrapper, Flourish). 
+        Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and coordinating stakeholder relationships. 
+        Fluent in <strong>Spanish, English, and French,</strong> having lived in four countries. 
+        <strong>Fully authorized to work in the U.S.</strong> and eager to contribute to research and hone my data analysis skills further.
         </p>
         <div className="mt-6">
           <Link href="/resume.pdf" target="_blank" download>
-            <button className="bg-black text-white px-6 py-3 rounded-md hover:bg-gray-800 transition">
+            <button className="bg-black text-white px-4 py-2 md:px-6 md:py-3 rounded-md hover:bg-gray-800 transition w-full md:w-auto">
               Download PDF
             </button>
           </Link>
@@ -79,31 +78,33 @@ analysis skills further.
       </section>
 
       {/* Education Section */}
-      <section className="bg-gray-100 py-16">
+      <section className="bg-gray-100 py-10 md:py-16 px-4 md:px-0">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold font-montserrat">Education</h2>
-          <ul className="mt-4 text-xl space-y-4 text-gray-700 font-lato">
+          <h2 className="text-2xl md:text-3xl font-bold font-lato">Education</h2>
+          <ul className="mt-3 md:mt-4 text-lg md:text-xl space-y-4 text-gray-700 font-lato">
             <li>
               <strong>Master of Science, Energy & Climate Policy (GPA 3.8 U.S. equivalent)</strong>      |      University of Sussex
-              <br /> SEPTEMBER 2023 | OCTOBER 2024, BRIGHTON, UK
-              <ul className="list-disc ml-6 space-y-4">
+              <br /> <span className="text-sm md:text-base text-gray-600">SEPTEMBER 2023 | OCTOBER 2024, BRIGHTON, UK</span>
+              <ul className="list-disc ml-4 md:ml-6 space-y-3 mt-3">
                 <li><strong>Top Student of the Program (79%)</strong>: Graduated with highest overall mark.</li>
                 <li><strong>Thesis (Highest Grade: 92%)</strong>: Applied Python-based analysis to examine how macroeconomic factors (interest rates, inflation) influence the cost of capital for solar PV projects in Brazil, discovering that rising financing costs constrained potential LCOE reductions despite technological advancements.</li>
                 <li><strong>Coursework</strong>: Quantitative Methods, Science/Technology/Innovation Policy, Energy Policy Frameworks, Policymaking and Analysis. Emphasis on analytics, large datasets, and advanced research methods.</li>
               </ul>
             </li>
-            <li>
+
+            <li className="mt-5">
               <strong>Bachelor of Arts, Government and Public Policy (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> AUGUST 2016 | DECEMBER 2021, MEXICO CITY, MX
+              <br /> <span className="text-sm md:text-base text-gray-600">AUGUST 2017 | DECEMBER 2021, MEXICO CITY, MX</span>
             </li>
+
             <li>
               <strong>Bachelor of Science, Economics (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> AUGUST 2016 | DECEMBER 2020, MEXICO CITY, MX
+              <br /> <span className="text-sm md:text-base text-gray-600">AUGUST 2016 | DECEMBER 2020, MEXICO CITY, MX</span>
             </li>
-            <li>
+
+            <li className= "mt-5">
               <strong>Other notable courses (non-exhaustive)</strong>:
-              <ul className="list-disc ml-6 italic space-y-2">
-                <li>Economics of Transformative AI | BlueDot Impact (Feb 2025 | Apr 2025)</li>
+              <ul className="list-disc ml-4 md:ml-6 italic space-y-2 mt-3">
                 <li>Bloomberg Finance Fundamentals | Bloomberg for Education (2025)</li>
                 <li>Bloomberg Market Concepts | Bloomberg for Education (2024)</li>
                 <li>The Data Analyst Course (Python) | Udemy (2024)</li>
@@ -116,12 +117,14 @@ analysis skills further.
 
       {/* Professional Experience Section */}
       <section className="max-w-4xl mx-auto py-16">
-        <h2 className="text-3xl font-bold font-montserrat">Professional Experience</h2>
+        <h2 className="text-3xl font-bold font-lato">Professional Experience</h2>
         <div className="mt-4 text-gray-700 font-lato space-y-6">
+
+          {/* EnergeA StructurA */}
           <div>
-            <h3 className="text-xl font-semibold">Energy Consultant | EnergeA StructurA</h3>
-            <p className="text-gray-600">April 2022 - August 2023, Mexico City, MX</p>
-            <ul className="list-disc pl-5">
+            <h3 className="text-lg md:text-xl font-semibold">Energy Consultant | EnergeA StructurA</h3>
+            <p className="text-sm md:text-base text-gray-600">April 2022 - August 2023, Mexico City, MX</p>
+            <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
               <li>Led a team of two junior consultants on projects for the Mexican Treasury Ministry, designing quantitative models to inform national fiscal and energy policy strategies.</li>
               <li>Oversaw programming and modeling tasks (using Python and Excel) for national-level energy and fiscal policy projects.</li>
               <li>Analyzed large datasets (including survey-based and secondary data) and conducted cost-benefit studies to evaluate incentives for electromobility and renewable energy, working closely with cross-functional teams.</li>
@@ -129,25 +132,31 @@ analysis skills further.
               <li>Assessed regulatory constraints for minimum petroleum storage compliance, providing strategic guidance to an international oil client.</li>
             </ul>
           </div>
+
+          {/* CONACYT */}
           <div>
-            <h3 className="text-xl font-semibold">Research Analyst | National Council for Science and Technology (CONACYT)</h3>
-            <p className="text-gray-600">June 2020 - December 2020, Mexico City, MX</p>
-            <ul className="list-disc pl-5">
+            <h3 className="text-lg md:text-xl font-semibold">Research Analyst | National Council for Science and Technology (CONACYT)</h3>
+            <p className="text-sm md:text-base text-gray-600">June 2020 - December 2020, Mexico City, MX</p>
+            <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
               <li>Contributed to empirical research on the effectiveness of regulations aiming to reduce drug consumption.</li>
               <li>Enriched qualitative datasets (interviews, q-sorting) to inform evidence-based policy recommendations.</li>
             </ul>
           </div>
+
+          {/*Economic, Finance & Law COnsulting Group*/}
           <div>
-            <h3 className="text-xl font-semibold">Consultant | Economic, Finance & Law Consulting Group</h3>
-            <p className="text-gray-600">June 2019 - October 2020, Mexico City, MX</p>
-            <ul className="list-disc pl-5">
+            <h3 className="text-lg md:text-xl font-semibold">Consultant | Economic, Finance & Law Consulting Group</h3>
+            <p className="text-sm md:text-base text-gray-600">June 2019 - October 2020, Mexico City, MX</p>
+            <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
               <li>Researched economic, political, and environmental issues supporting legislative strategies and public policy planning in areas including hydraulic resources, energy poverty, waste management, and the circular economy.</li>
             </ul>
           </div>
+
+          {/* Energy Regulatory Commission (CRE) */}
           <div>
-            <h3 className="text-xl font-semibold">Intern | Energy Regulatory Commission (CRE)</h3>
-            <p className="text-gray-600">August 2018 - December 2018, Mexico City, MX</p>
-            <ul className="list-disc pl-5">
+            <h3 className="text-lg md:text-xl font-semibold">Intern | Energy Regulatory Commission (CRE)</h3>
+            <p className="text-sm md:text-base text-gray-600">August 2018 - December 2018, Mexico City, MX</p>
+            <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
               <li>Updated and analyzed electricity rate files and collaborated on invoice reviews and operational assessments, supporting data-driven regulatory oversight.</li>
             </ul>
           </div>
@@ -155,28 +164,31 @@ analysis skills further.
       </section>
 
       {/* Skills Section */}
-      <section className="bg-gray-900 text-white py-16">
-        <div className="max-w-6xl mx-auto grid grid-cols-3 gap-6">
+      <section className="bg-gray-900 text-white py-10 md:py-16 px-6 md:px-0">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
           <div>
-            <h2 className="text-2xl font-bold font-montserrat">Languages</h2>
-            <ul className="mt-4 text-gray-300 font-lato space-y-2">
+            <h2 className="text-2xl md:text-3xl font-bold font-lato">Languages</h2>
+            <ul className="mt-4 text-gray-300 font-lato space-y-2 text-base md:text-lg">
               <li>Spanish (Native)</li>
               <li>English (Fluent)</li>
               <li>French (Fluent)</li>
             </ul>
           </div>
+
           <div>
-            <h2 className="text-2xl font-bold font-montserrat">Software Skills</h2>
-            <ul className="mt-4 text-gray-300 font-lato space-y-2">
+            <h2 className="text-2xl md:text-3xl font-bold font-lato">Software Skills</h2>
+            <ul className="mt-4 text-gray-300 font-lato space-y-2 text-base md:text-lg">
               <li>Excel (Advanced)</li>
               <li>EViews (Intermediate)</li>
               <li>STATA (Intermediate)</li>
               <li>Python (Basic)</li>
             </ul>
           </div>
+
           <div>
-            <h2 className="text-2xl font-bold font-montserrat">Visualization Tools</h2>
-            <ul className="mt-4 text-gray-300 font-lato space-y-2">
+            <h2 className="text-2xl md:text-3xl font-bold font-lato">Visualization Tools</h2>
+            <ul className="mt-4 text-gray-300 font-lato space-y-2 text-base md:text-lg">
               <li>PowerPoint (Advanced)</li>
               <li>Canva (Advanced)</li>
               <li>Datawrapper (Advanced)</li>
@@ -187,9 +199,9 @@ analysis skills further.
       </section>
 
 {/* Books Section */}
-<section className="max-w-6xl mx-auto py-16">
-  <h2 className="text-3xl font-bold font-montserrat">Books I&apos;m Reading</h2>
-  <div className="grid grid-cols-3 gap-6 mt-6">
+<section className="max-w-6xl mx-auto py-10 md:py-16 px-6 md:px-0">
+  <h2 className="text-2xl md:text-3xl font-bold font-lato text-center">Books I&apos;m Reading</h2>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6">
     {/* Book 1 */}
     <div className="text-center">
       <Link href="https://www.versobooks.com/products/3069-the-price-is-wrong?srsltid=AfmBOooEG8KOsJmkv3R9JDgEYN_PdaehQUdRzgMkkoNKvVblxQJd5qcs" target="_blank">
@@ -241,10 +253,10 @@ analysis skills further.
 </section>
 
       {/* Bottom Navigation Bar */}
-      <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-4 mt-8 flex justify-between items-center px-12">
-        <div className="flex space-x-6">
+      <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-6 md:py-4 mt-8 px-6 md:px-12 flex flex-col md:flex-row items-center md:justify-between text-center">
+        <div className="flex space-x-6 mb-4 md:mb-0">
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://github.com/santiagomong" target="_blank">
             <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
@@ -254,7 +266,7 @@ analysis skills further.
           </Link>
         </div>
         <div className="flex items-center space-x-2">
-          <Image src="/icons/phone2.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           <span>+1-(346)-823-0454</span>
         </div>
       </footer>
