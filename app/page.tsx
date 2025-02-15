@@ -97,9 +97,9 @@ export default function Home() {
       </div>
 
       {/* About & Work Approach Section */}
-      <div className="py-16">
+      <div className="py-10 px-4 md:py-16 md:px-6">
         <motion.section
-          className="max-w-6xl mx-auto px-6 py-8 md:grid md:grid-cols-2 md:gap-12"
+          className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.8 }}
@@ -107,25 +107,37 @@ export default function Home() {
         >
           {/* Left Column - About Me */}
           <div>
-            <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">About me</h2>
-            <p className="text-dark mt-4 leading-relaxed text-justify">
-              I&apos;m an analytical, driven, and multidisciplinary professional passionate about <strong>data-driven insights with impactful solutions</strong>, and <strong>energy & technology policy</strong>. Over <strong>two years of consultancy experience</strong> where I evolved from an analyst to managing a small team, I excel in delivering actionable insights based on robust quantitative methods, modeling, and large data analysis. Dynamic, data-savvy energy policy analyst with a proven track record of shaping highlevel fiscal and energy strategies. Dual bachelor&apos;s degrees in <strong>Economics and Public Policy</strong>, plus an <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of my class and securing the highest thesis grade. Proficient in data analytics <strong>(Excel, STATA, Python)</strong> and data visualization <strong>(PowerPoint, Datawrapper, Flourish)</strong>. Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and coordinating stakeholder relationships. Fluent in <strong>Spanish, English, and French</strong>, having lived in four countries. Fully <strong>authorized to work in the U.S.</strong> and eager to contribute to research and hone my data analysis skills further. 
+            <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">About me</h2>
+            <p className="text-dark mt-4 leading-relaxed text-justify text-sm md:text-base">
+              I&apos;m an analytical, driven, and multidisciplinary professional passionate about 
+              <strong>data-driven insights with impactful solutions</strong>, and <strong>energy & technology policy</strong>. 
+              Over <strong>two years of consultancy experience</strong> where I evolved from an analyst to managing a small team. 
+              I excel in delivering actionable insights based on robust quantitative methods, modeling, and large data analysis. 
+              Dual bachelor&apos;s degrees in <strong>Economics and Public Policy</strong>, plus an 
+              <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of my class. 
+              Proficient in: <strong>Excel, STATA, Python</strong> and <strong>PowerPoint, Datawrapper, Flourish</strong>. 
+              Fluent in <strong>Spanish, English, and French</strong>, having lived in four countries. 
+              Fully <strong>authorized to work in the U.S.</strong>
             </p>
           </div>
 
           {/* Right Column - My Approach to Work */}
           <div>
-            <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">My Approach to Work</h2>
-            <p className="text-dark mt-4 leading-relaxed text-justify">
-              I believe in <strong>data-driven decision-making</strong>, leveraging <strong>cross-functional collaboration</strong> to develop effective and evidence-based policies.
-              My experience in consulting and research has shaped my ability to distill complex topics into actionable strategies. Skilled in regression analysis, data visualization, and research synthesis, with a track record of producing high-quality deliverables for government agencies and private sector clients.
+            <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">My Approach to Work</h2>
+            <p className="text-dark mt-4 leading-relaxed text-justify text-sm md:text-base">
+              I believe in <strong>data-driven decision-making</strong>, leveraging 
+              <strong>cross-functional collaboration</strong> to develop effective and evidence-based policies.
+              My experience in consulting and research has shaped my ability to distill complex 
+              topics into actionable strategies. Skilled in regression analysis, data visualization, 
+              and research synthesis, with a track record of producing high-quality deliverables 
+              for government agencies and private sector clients.
             </p>
 
           {/* Two-Columns*/}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <div>
-              <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">Roles</h2>
-              <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2">
+              <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">Roles</h2>
+              <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
                 <li>Public Policy Researcher</li>
                 <li>Consultant</li>
                 <li>Data Analyst</li>
@@ -133,16 +145,16 @@ export default function Home() {
             </div>
 
             <div>
-          <h2 className="text-3xl font-montserrat font-bold text-dark border-b-2 border-dark pb-2">
+          <h2 className="text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
             Education
           </h2>
-          <p className="text-dark mt-2 leading-relaxed text-justify">
+          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
             MSc in Energy & Climate Policy - <strong>University of Sussex</strong>
           </p>
-          <p className="text-dark mt-1 leading-relaxed text-justify">
+          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
             BA in Government & Public Policy - <strong>Universidad Panamericana</strong>
           </p>
-          <p className="text-dark mt-1 leading-relaxed text-justify">
+          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
             BSc in Economics - <strong>Universidad Panamericana</strong>
           </p>
         </div>
@@ -152,7 +164,7 @@ export default function Home() {
 </div>
       
       {/* Bottom Navigation Bar */}
-      <footer className="w-full text-dark py-4 mt-8 flex justify-between items-center px-12">
+      <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
         <div className="flex space-x-6">
           <Image src="/icons/mail.svg" alt="Mail" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
           <span>santiagomong@gmail.com</span>
