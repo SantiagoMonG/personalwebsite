@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <>
       {/* Name & Subtitle Section */}
-      <div className="flex flex-col items-center justify-center pt-20 text-center">
+      <div className="flex flex-col items-center justify-center py-6">
         <motion.h1
           className="text-5xl font-montserrat text-dark text-center mt-4 mb-2"
           variants={container}
@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       {/* Navbar Below Name */}
-      <nav className="bg-black text-white mt-6 py-3">
+      <nav className="bg-black text-white w-full mt-0 py-3">
         <ul className="flex justify-center space-x-8 font-montserrat text-lg">
           <li>
             <Link href="/about" className="hover:underline">About</Link>
