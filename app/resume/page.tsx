@@ -43,7 +43,7 @@ export default function Resume() {
           Santiago Monroy
         </motion.h1>
         <h2 className="flex items-center space-x-1 md:space-x-2 mt-1 md:mt-2 text-center">
-          Data Analysis | Economics | Energy & Technology Policy
+          Data & Research | Economics | Energy & Technology Policy
         </h2>
       </div>
 
@@ -76,14 +76,15 @@ export default function Resume() {
       {/* Header Section */}
       <section className="max-w-4xl mx-auto py-10 md:py-16 text-center">
         <p className="text-base md:text-lg text-gray-700 mt-4 font-lato leading-relaxed">
-        Analytical and adaptable professional with <strong>three years of experience</strong> in 
-        data insights, policy analysis, and project coordination. Skilled at translating complex challenges into 
-        clear, actionable solutions. Holder of <strong>BSc in Economics and a BA Government & Public Policy</strong>, 
-        plus an <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of the class. 
-        Proficient in data analytics (Excel, STATA, Python) and data visualization (PowerPoint, Datawrapper, Flourish). 
-        Experienced in collaborating with cross-functional teams, delivering client-focused solutions, and coordinating stakeholder relationships. 
-        Fluent in <strong>Spanish, English, and French,</strong> having lived in four countries. 
-        <strong>Fully authorized to work in the U.S.</strong> and eager to contribute to research and hone my data analysis skills further.
+        Professional with <strong>three years of experience</strong> as a research and policy analyst in energy markets,
+        technology policy, and economic analyses. Strong background in quantitative research, data analysis,
+        and policy interpretation. <strong>MS in Energy & Climate Policy</strong> (graduated top of class) and dual bachelor&apos;s
+        degrees in <strong>economics & government/public policy</strong>. Writes and researches about emerging
+        technologies, trade, energy economics, and global economic policy. Proficient in data visualization, economic
+        modeling, and policy research, using <strong>Excel, STATA, and Python</strong>. 
+        Fluent in <strong>Spanish, English, and French.</strong>
+        Fully <strong>authorized to work in the U.S.</strong>
+
         </p>
         <div className="mt-6">
           <Link href="/resume.pdf" target="_blank" download>
@@ -95,46 +96,61 @@ export default function Resume() {
       </section>
 
       {/* Education Section */}
-      <section className="bg-gray-100 py-10 md:py-16 px-4 md:px-0">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold font-lato">Education</h2>
-          <ul className="mt-3 md:mt-4 text-lg md:text-xl space-y-4 text-gray-700 font-lato">
-            <li>
-              <strong>Master of Science, Energy & Climate Policy (GPA 3.8 U.S. equivalent)</strong>      |      University of Sussex
-              <br /> <span className="text-sm md:text-base text-gray-600">SEPTEMBER 2023 | OCTOBER 2024, BRIGHTON, UK</span>
-              <ul className="list-disc ml-4 md:ml-6 space-y-3 mt-3">
-                <li><strong>Top Student of the Program (79%)</strong>: Graduated with highest overall mark.</li>
-                <li><strong>Thesis (Highest Grade: 92%)</strong>: Applied Python-based analysis to examine how macroeconomic factors (interest rates, inflation) influence the cost of capital for solar PV projects in Brazil, discovering that rising financing costs constrained potential LCOE reductions despite technological advancements.</li>
-                <li><strong>Coursework</strong>: Quantitative Methods, Science/Technology/Innovation Policy, Energy Policy Frameworks, Policymaking and Analysis. Emphasis on analytics, large datasets, and advanced research methods.</li>
-              </ul>
-            </li>
+      <section className="max-w-4xl mx-auto py-16">
+        <h2 className="text-2xl font-bold font-lato">Education</h2>
+        <div className="mt-4 text-gray-700 font-lato space-y-6">
 
-            <li className="mt-5">
-              <strong>Bachelor of Arts, Government and Public Policy (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> <span className="text-sm md:text-base text-gray-600">AUGUST 2017 | DECEMBER 2021, MEXICO CITY, MX</span>
-            </li>
+          {/* MSc in Energy & Climate Policy */}
+          <div>
+            <h3 className="text-lg md:text-xl font-semibold">
+              Master of Science, Energy & Climate Policy (GPA 3.8 U.S. equivalent) | University of Sussex
+            </h3>
+            <p className="text-sm md:text-base text-gray-600">
+              September 2023 - October 2024, Brighton, UK
+            </p>
+            <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
+              <li><strong>Top Student of the Program (79%)</strong>: Graduated with highest overall mark.</li>
+              <li><strong>Thesis (Highest Grade: 92%)</strong>: Applied Python-based analysis to examine how macroeconomic factors (interest rates, inflation) influence the cost of capital for solar PV projects in Brazil, discovering that rising financing costs constrained potential LCOE reductions despite technological advancements.</li>
+              <li><strong>Coursework</strong>: Quantitative Methods, Science/Technology/Innovation Policy, Energy Policy Frameworks, Policymaking and Analysis. Emphasis on analytics, large datasets, and advanced research methods.</li>
+            </ul>
+          </div>
 
-            <li>
-              <strong>Bachelor of Science, Economics (GPA 3.5 U.S. equivalent)</strong>      |      Universidad Panamericana
-              <br /> <span className="text-sm md:text-base text-gray-600">AUGUST 2016 | DECEMBER 2020, MEXICO CITY, MX</span>
-            </li>
+          {/* BA in Government and Public Policy */}
+          <div>
+            <h3 className="text-lg md:text-xl font-semibold">
+            Bachelor of Arts, Government and Public Policy (GPA 3.5 U.S. equivalent) | Universidad Panamericana
+            </h3>
+            <p className="text-sm md:text-base text-gray-600">
+             August 2017 - December 2021, Mexico City, MX
+            </p>
+          </div>
 
-            <li className= "mt-5">
-              <strong>Other notable courses (non-exhaustive)</strong>:
-              <ul className="list-disc ml-4 md:ml-6 italic space-y-2 mt-3">
-                <li>Bloomberg Finance Fundamentals | Bloomberg for Education (2025)</li>
-                <li>Bloomberg Market Concepts | Bloomberg for Education (2024)</li>
-                <li>The Data Analyst Course (Python) | Udemy (2024)</li>
-                <li>The Essential Guide to Stata | Udemy (2024)</li>
-              </ul>
-            </li>
-          </ul>
+          {/* BSc in Economics */}
+          <div>
+            <h3 className="text-lg md:text-xl font-semibold">
+            Bachelor of Science, Economics (GPA 3.5 U.S. equivalent) | Universidad Panamericana
+            </h3>
+            <p className="text-sm md:text-base text-gray-600">
+             August 2016 - December 2020, Mexico City, MX
+            </p>
+          </div>
+
+          {/* Additional Courses */}
+          <div>
+            <h3 className="text-lg md:text-xl font-semibold">Other Notable Courses (non-exhaustive)</h3>
+            <ul className="list-disc ml-4 md:ml-6 italic space-y-2 mt-2 leading-relaxed">
+              <li>Bloomberg Finance Fundamentals | Bloomberg for Education (2025)</li>
+              <li>Bloomberg Market Concepts | Bloomberg for Education (2024)</li>
+              <li>The Data Analyst Course (Python) | Udemy (2024)</li>
+              <li>The Essential Guide to Stata | Udemy (2024)</li>
+            </ul>
+          </div>
         </div>
       </section>
 
       {/* Professional Experience Section */}
       <section className="max-w-4xl mx-auto py-16">
-        <h2 className="text-3xl font-bold font-lato">Professional Experience</h2>
+        <h2 className="text-2xl font-bold font-lato">Professional Experience</h2>
         <div className="mt-4 text-gray-700 font-lato space-y-6">
 
           {/* EnergeA StructurA */}
@@ -142,11 +158,14 @@ export default function Resume() {
             <h3 className="text-lg md:text-xl font-semibold">Energy Consultant | EnergeA StructurA</h3>
             <p className="text-sm md:text-base text-gray-600">April 2022 - August 2023, Mexico City, MX</p>
             <ul className="list-disc ml-4 md:ml-6 space-y-2 mt-2 leading-relaxed">
-              <li>Led a team of two junior consultants on projects for the Mexican Treasury Ministry, designing quantitative models to inform national fiscal and energy policy strategies.</li>
-              <li>Oversaw programming and modeling tasks (using Python and Excel) for national-level energy and fiscal policy projects.</li>
-              <li>Analyzed large datasets (including survey-based and secondary data) and conducted cost-benefit studies to evaluate incentives for electromobility and renewable energy, working closely with cross-functional teams.</li>
+              <li>Led a team of two junior consultants to design quantitative models, data analyses, and literature review for Mexico&apos;s Treasury Ministry on fiscal incentives and energy policy.</li>
+              <li>Designed tax incentives for renewable energy, electromobility, and waste management.</li>
+              <li>Managed Python/Excel modeling for national-level projects—evaluating incentives, cost-benefit scenarios, and policy feasibility for electromobility, renewables, and hydrocarbon activities.</li>
+              <li>Benchmarked international best practices to propose reforms for Mexico&apos;s Hydrocarbon Exploration and Extraction Activity Tax (IAEEH) and compensation fund for environmental and social damages.</li>
               <li>Developed fiscal policy recommendations for environmental and social impact mitigation of hydrocarbon exploration, simplifying large datasets into clear, executive-ready presentations.</li>
+              <li>Developed visual reports & policy briefs, ensuring accessibility of complex energy data.</li>
               <li>Assessed regulatory constraints for minimum petroleum storage compliance, providing strategic guidance to an international oil client.</li>
+              <li>Contributed to expert economic reviews of proposed constitutional reforms in the hydrocarbons and electricity sectors, analyzing their implications for market competition.</li>
             </ul>
           </div>
 
@@ -270,7 +289,7 @@ export default function Resume() {
 </section>
 
       {/* Bottom Navigation Bar */}
-      <footer className="w-full bg-white dark:bg-gray-900 text-black dark:text-white py-6 md:py-4 mt-8 px-6 md:px-12 flex flex-col md:flex-row items-center md:justify-between text-center">
+      <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
         <div className="flex space-x-6 mb-4 md:mb-0">
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
             <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
