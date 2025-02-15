@@ -1,22 +1,63 @@
 "use client";
 
+import { useState } from "react";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Resume() {
+    const [isOpen, setIsOpen] = useState(false);
+    
+    const container = {
+      hidden: { opacity: 0, y: 20 },
+      visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
+    };
   return (
+    <>
+      {/* Name & Subtitle Section */}
+      <div className="flex flex-col items-center justify-center py-4 px-4 md:py-6">
+        <motion.h1
+          className="text-4xl md:text-5xl font-montserrat text-dark text-center mt-2 md:mt-4 mb-1 md:mb-2"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          Santiago Monroy
+        </motion.h1>
+        <h2 className="flex items-center space-x-1 md:space-x-2 mt-1 md:mt-2 text-center">
+          Data Analysis | Economics | Energy & Technology Policy
+        </h2>
+      </div>
+
+      {/* Navbar Below Name */}
+      <nav className="bg-black text-white text-sm w-full py-2 md:py-3">
+       <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 text-md md:text-lg">
+        <li><Link href="/about" className="hover:underline">About</Link></li>
+        <li><Link href="/resume" className="hover:underline">Resume</Link></li>
+        <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
+        <li><Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link></li>
+       </ul>
+
+       <div className="md:hidden text-center">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-white font-semibold py-2">
+           ☰ Menu
+        </button>
+        {isOpen && (
+          <ul className="bg-gray-900 text-white text-sm py-2 space-y-2">
+           <li><Link href="/about" className="block py-1">About</Link></li>
+           <li><Link href="/resume" className="block py-1">Resume</Link></li>
+           <li><Link href="/projects" className="block py-1">Slides, Charts & Projects</Link></li>
+           <li><Link href="https://substack.com/@samongom" target="_blank" className="block py-1">Substack</Link></li>
+          </ul>
+        )}
+      </div>
+    </nav>
+
+  
     <div className="bg-white text-black">
       {/* Header Section */}
-      <div className="max-w-4xl mx-auto mt-8">
-  <Link href="/">
-    <button className="bg-gradient-to-r from-teal-600 to-teal-950 text-white px-6 py-3 rounded-md hover:bg-blue-700 transition">
-      ← Back to Home
-    </button>
-  </Link>
-</div>
       <section className="max-w-4xl mx-auto py-16 text-center">
-        <h1 className="text-5xl font-bold font-montserrat">Santiago Monroy</h1>
         <p className="text-lg text-gray-700 mt-4 font-lato">
         Analytical and adaptable professional with <strong>two years of consulting experience</strong> in data insights, policy
 analysis, and project coordination. Skilled at translating complex challenges into clear, actionable
@@ -218,5 +259,6 @@ analysis skills further.
         </div>
       </footer>
     </div>
+    </>
   );
 }
