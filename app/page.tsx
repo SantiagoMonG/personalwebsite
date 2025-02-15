@@ -48,7 +48,7 @@ export default function Home() {
       </div>
 
       {/* Navbar Below Name */}
-    <nav className="bg-black text-white w-full py-2 md:py-3">
+    <nav className="bg-black text-white text-sm w-full py-2 md:py-3">
        <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 text-md md:text-lg">
         <li><Link href="/about" className="hover:underline">About</Link></li>
         <li><Link href="/resume" className="hover:underline">Resume</Link></li>
