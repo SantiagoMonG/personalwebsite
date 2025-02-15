@@ -49,7 +49,7 @@ export default function Home() {
 
       {/* Navbar Below Name */}
     <nav className="bg-black text-white w-full py-2 md:py-3">
-       <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 font-montserrat text-md md:text-lg">
+       <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 text-md md:text-lg">
         <li><Link href="/about" className="hover:underline">About</Link></li>
         <li><Link href="/resume" className="hover:underline">Resume</Link></li>
         <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
