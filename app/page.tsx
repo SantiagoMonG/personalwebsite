@@ -17,7 +17,7 @@ export default function Home() {
       {/* Name & Subtitle Section */}
       <div className="flex flex-col items-center justify-center pt-20 text-center">
         <motion.h1
-          className="text-6xl font-bold font-montserrat"
+          className="text-5xl font-montserrat text-dark text-center mt-4 mb-2"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -84,7 +84,7 @@ export default function Home() {
             <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
         </div>
       </div>
