@@ -6,9 +6,25 @@ import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname(); // Detect current page
+  const router = useRouter();
+
+  // Function to handle "About" navigation
+  const handleAboutClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault(); // Prevent default link behavior
+
+    if (pathname === "/") {
+      // If already on the homepage, scroll smoothly to the about section
+      document.getElementById("about")?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // If on another page, navigate to the home page and scroll to "About"
+      router.push("/#about");
+    }
+  }
   
   const container = {
     hidden: { opacity: 0, y: 20 },
@@ -50,7 +66,7 @@ export default function Home() {
       {/* Navbar Below Name */}
     <nav className="bg-black text-white text-sm w-full py-2 md:py-3">
        <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 text-md md:text-lg">
-        <li><Link href="/about" className="hover:underline">About</Link></li>
+        <li><Link href="/#about" onClick={handleAboutClick} className="hover:underline">About</Link></li>
         <li><Link href="/resume" className="hover:underline">Resume</Link></li>
         <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
         <li><Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link></li>
@@ -62,7 +78,7 @@ export default function Home() {
         </button>
         {isOpen && (
           <ul className="bg-gray-900 text-white text-sm py-2 space-y-2">
-           <li><Link href="/about" className="block py-1">About</Link></li>
+           <li><Link href="/#about" onClick={handleAboutClick} className="block py-1">About</Link></li>
            <li><Link href="/resume" className="block py-1">Resume</Link></li>
            <li><Link href="/projects" className="block py-1">Slides, Charts & Projects</Link></li>
            <li><Link href="https://substack.com/@samongom" target="_blank" className="block py-1">Substack</Link></li>
@@ -97,7 +113,7 @@ export default function Home() {
       </div>
 
       {/* About & Work Approach Section */}
-      <div className="py-10 px-4 md:py-16 md:px-6">
+      <div className="py-10 px-4 md:py-16 md:px-6" id="about">
         <motion.section
           className="max-w-6xl mx-auto px-4 md:px-6 py-6 md:py-8 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12"
           initial={{ opacity: 0 }}
