@@ -2,71 +2,89 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Navbar from "@/components/Navbar";
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
-  // Reusable motion variants to ensure smoother animations.
   const container = {
     hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration: 1, ease: "easeOut" },
-    },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
   };
 
   return (
     <>
-      <Navbar />
-      {/* Hero Section */}
-      <div className="flex flex-col items-start justify-center min-h-[80vh] pt-20 px-12 text-left space-y-4">
-        <motion.p
-          className="text-6xl font-montserrat text-dark font-bold text-justify"
+      {/* Name & Subtitle Section */}
+      <div className="flex flex-col items-center justify-center pt-20 text-center">
+        <motion.h1
+          className="text-6xl font-bold font-montserrat"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           Santiago Monroy
-        </motion.p>
+        </motion.h1>
         <motion.div
-          className="flex items-baseline space-x-6"
+          className="flex items-center space-x-2 mt-2"
           variants={container}
           initial="hidden"
           animate="visible"
         >
           <TypeAnimation
-            sequence={["Economics |", 1000, "Data Analysis |", 1000, "Data Analysis | Economics |", 1000, "Data Analysis | Economics | Energy & Technology Policy", 3000]}
-            wrapper="h1"
-            className="text-3xl font-montserrat text-dark font-bold"
+            sequence={[
+              "Economics |", 1000, 
+              "Data Analysis |", 1000, 
+              "Data Analysis | Economics |", 1000, 
+              "Data Analysis | Economics | Energy & Technology Policy", 3000
+            ]}
+            wrapper="h2"
+            className="text-2xl font-montserrat text-gray-600 font-semibold"
             repeat={Infinity}
           />
         </motion.div>
+      </div>
+
+      {/* Navbar Below Name */}
+      <nav className="bg-black text-white mt-6 py-3">
+        <ul className="flex justify-center space-x-8 font-montserrat text-lg">
+          <li>
+            <Link href="/about" className="hover:underline">About</Link>
+          </li>
+          <li>
+            <Link href="/resume" className="hover:underline">Resume</Link>
+          </li>
+          <li>
+            <Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link>
+          </li>
+          <li>
+            <Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">
+              Substack
+            </Link>
+          </li>
+        </ul>
+      </nav>
+
+      <div className="flex flex-col items-center justify-center min-h-[60vh] px-12 text-center space-y-4">
         <motion.p
-          className="text-lg max-w-3xl mt-2 font-lato text-dark text-justify"
+          className="text-lg max-w-3xl font-lato text-gray-700"
           variants={container}
           initial="hidden"
           animate="visible"
         >
-          Bridging the worlds of <strong>data, policy, and technology</strong>, I analyze complex economic and regulatory challenges to inform actionable insights. With a foundation in <strong>quantitative analysis, public policy, and energy markets</strong>, my work explores the intersection of economics, industrial strategy, and emerging technologies.
+          Bridging the worlds of <strong>data, policy, and technology</strong>, I analyze complex economic and regulatory challenges to inform actionable insights.
         </motion.p>
-        {/* Projects & Substack Links */}
-        <div className="flex space-x-6 mt-6">
-          <Link href="/projects">
-            <button className="bg-gradient-to-r from-blue-500 to-indigo-600 px-4 py-2 rounded-md font-montserrat font-semibold text-white hover:scale-105 transition-transform">
-              Projects
-            </button>
-          </Link>
+
+
+        {/* Social Links */}
+        <div className="flex space-x-6 mt-4">
           <Link href="https://substack.com/@samongom" target="_blank">
-          <Image src="/icons/substack2.svg" alt="Substack" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/substack2.svg" alt="Substack" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://github.com/santiagomong" target="_blank">
-            <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin2.svg" alt="LinkedIn" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
         </div>
       </div>
