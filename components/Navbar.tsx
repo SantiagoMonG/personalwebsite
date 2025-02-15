@@ -1,52 +1,43 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useTheme } from "next-themes";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
 export default function Navbar() {
-  const { theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) return null;
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-white dark:bg-gray-900 text-black dark:text-white px-6 py-4 flex justify-between items-center shadow-md z-10 font-sans">
-      {/* Logo/Icon */}
-      <div className="flex items-center space-x-2">
-        <Image
-          src="/icons/rocket.svg"
-          alt="Rocket Icon"
-          width={60}
-          height={60}
-        />
-      </div>
-
-      {/* Navigation Links with Styled Buttons */}
-      <div className="space-x-6 flex">
-        <Link href="/resume">
-          <button className="bg-gradient-to-r from-yellow-500 to-orange-500 px-4 py-2 rounded-md font-montserrat font-semibold text-black hover:scale-105 transition-transform">
-            Resume
-          </button>
+    <nav className="w-full bg-black text-white">
+      {/* Desktop Navbar */}
+      <div className="max-w-6xl mx-auto flex justify-between items-center py-4 px-6">
+        <Link href="/">
+          <p className="text-xl font-bold tracking-wide cursor-pointer">Santiago Monroy</p>
         </Link>
-
-        {/* Light/Dark Mode Toggle with Custom Icons */}
-        <button
-          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-          className="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-transform hover:scale-110"
+        <div className="hidden md:flex space-x-8 font-medium">
+          <Link href="/about" className="hover:underline">About</Link>
+          <Link href="/resume" className="hover:underline">Resume</Link>
+          <Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link>
+          <Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link>
+        </div>
+        {/* Hamburger Button for Mobile */}
+        <button 
+          onClick={() => setIsOpen(!isOpen)} 
+          className="md:hidden focus:outline-none"
         >
-          {mounted && theme === "dark" ? (
-            <Image src="/icons/sun2.svg" alt="Light Mode" width={30} height={30} />
-          ) : (
-            <Image src="/icons/moon.svg" alt="Dark Mode" width={30} height={30} />
-          )}
+          <Image src="/icons/menu.svg" alt="Menu" width={30} height={30} />
         </button>
       </div>
+
+      {/* Mobile Menu (Hidden by default) */}
+      {isOpen && (
+        <div className="md:hidden bg-gray-900 text-white text-center py-4">
+          <Link href="/about" className="block py-2 hover:bg-gray-800">About</Link>
+          <Link href="/resume" className="block py-2 hover:bg-gray-800">Resume</Link>
+          <Link href="/projects" className="block py-2 hover:bg-gray-800">Slides, Charts & Projects</Link>
+          <Link href="https://substack.com/@samongom" target="_blank" className="block py-2 hover:bg-gray-800">Substack</Link>
+        </div>
+      )}
     </nav>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
@@ -7,6 +8,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+  const [isOpen, setIsOpen] = useState(false);
+  
   const container = {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
@@ -15,9 +18,9 @@ export default function Home() {
   return (
     <>
       {/* Name & Subtitle Section */}
-      <div className="flex flex-col items-center justify-center py-6">
+      <div className="flex flex-col items-center justify-center py-4 px-4 md:py-6">
         <motion.h1
-          className="text-5xl font-montserrat text-dark text-center mt-4 mb-2"
+          className="text-4xl md:text-5xl font-montserrat text-dark text-center mt-2 md:mt-4 mb-1 md:mb-2"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -25,7 +28,7 @@ export default function Home() {
           Santiago Monroy
         </motion.h1>
         <motion.div
-          className="flex items-center space-x-2 mt-2"
+          className="flex items-center space-x-1 md:space-x-2 mt-1 md:mt-2 text-center"
           variants={container}
           initial="hidden"
           animate="visible"
@@ -38,35 +41,39 @@ export default function Home() {
               "Data Analysis | Economics | Energy & Technology Policy", 3000
             ]}
             wrapper="h2"
-            className="text-2xl font-montserrat text-gray-600 font-semibold"
+            className="text-lg md:text-2xl font-montserrat text-gray-600 font-semibold"
             repeat={Infinity}
           />
         </motion.div>
       </div>
 
       {/* Navbar Below Name */}
-      <nav className="bg-black text-white w-full mt-0 py-3">
-        <ul className="flex justify-center space-x-8 font-montserrat text-lg">
-          <li>
-            <Link href="/about" className="hover:underline">About</Link>
-          </li>
-          <li>
-            <Link href="/resume" className="hover:underline">Resume</Link>
-          </li>
-          <li>
-            <Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link>
-          </li>
-          <li>
-            <Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">
-              Substack
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <nav className="bg-black text-white w-full py-2 md:py-3">
+       <ul className="hidden md:flex justify-center space-x-4 md:space-x-8 font-montserrat text-md md:text-lg">
+        <li><Link href="/about" className="hover:underline">About</Link></li>
+        <li><Link href="/resume" className="hover:underline">Resume</Link></li>
+        <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
+        <li><Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link></li>
+       </ul>
 
-      <div className="flex flex-col items-center justify-center min-h-[60vh] px-12 text-center space-y-4">
+       <div className="md:hidden text-center">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-white font-semibold py-2">
+           ☰ Menu
+        </button>
+        {isOpen && (
+          <ul className="bg-gray-900 text-white text-sm py-2 space-y-2">
+           <li><Link href="/about" className="block py-1">About</Link></li>
+           <li><Link href="/resume" className="block py-1">Resume</Link></li>
+           <li><Link href="/projects" className="block py-1">Slides, Charts & Projects</Link></li>
+           <li><Link href="https://substack.com/@samongom" target="_blank" className="block py-1">Substack</Link></li>
+          </ul>
+        )}
+      </div>
+    </nav>
+
+      <div className="flex flex-col items-center justify-center min-h-[50vh] px-6 md:px-12 text-center space-y-3 md:space-y-4">
         <motion.p
-          className="text-lg max-w-3xl font-lato text-gray-700"
+          className="text-base md:text-lg max-w-2xl md:max-w-3xl font-lato text-gray-700"
           variants={container}
           initial="hidden"
           animate="visible"
