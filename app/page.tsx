@@ -58,7 +58,7 @@ export default function Home() {
             ]}
             wrapper="h2"
             className="text-lg md:text-2xl font-montserrat text-gray-600 font-semibold"
-            repeat={Infinity}
+            repeat={0}
           />
         </motion.div>
       </div>
@@ -126,8 +126,8 @@ export default function Home() {
             <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">About me</h2>
             <p className="text-dark mt-4 leading-relaxed text-justify text-sm md:text-base">
               I&apos;m an analytical, driven, and multidisciplinary professional passionate about 
-              <strong>data-driven insights with impactful solutions</strong>, and <strong>energy & technology policy</strong>. 
-              Over <strong>two years of consultancy experience</strong> where I evolved from an analyst to managing a small team. 
+              <strong> data-driven insights with impactful solutions</strong>, and <strong>energy & technology policy</strong>. 
+              <strong>Three years of consultancy experience</strong> where I evolved from an analyst to managing a small team. 
               I excel in delivering actionable insights based on robust quantitative methods, modeling, and large data analysis. 
               Dual bachelor&apos;s degrees in <strong>Economics and Public Policy</strong>, plus an 
               <strong>MSc in Energy & Climate Policy</strong> from the University of Sussex—graduating top of my class. 
@@ -139,7 +139,9 @@ export default function Home() {
 
           {/* Right Column - My Approach to Work */}
           <div>
-            <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">My Approach to Work</h2>
+            <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
+              My Approach to Work
+            </h2>
             <p className="text-dark mt-4 leading-relaxed text-justify text-sm md:text-base">
               I believe in <strong>data-driven decision-making</strong>, leveraging 
               <strong> cross-functional collaboration</strong> to develop effective and evidence-based policies.
@@ -148,46 +150,68 @@ export default function Home() {
               and research synthesis, with a track record of producing high-quality deliverables 
               for government agencies and private sector clients.
             </p>
+            
+          <div className="mt-6">
+            <h2 className="text-xl md:text-2xl font-lato font-bold text-dark text-center md:text-left">
+              Tools & Technologies
+            </h2>
 
-          {/* Two-Columns*/}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            <div>
-              <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">Roles</h2>
-              <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
-                <li>Public Policy Researcher</li>
-                <li>Consultant</li>
-                <li>Data Analyst</li>
-              </ul>
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 mt-4">
+              <Image src="/icons/python.svg" alt="Python" width={50} height={50} className="h-10 md:h-14" />
+              <Image src="/icons/stata.svg" alt="Stata" width={50} height={50} className="h-10 md:h-14" />
+              <Image src="/icons/excel.svg" alt="Excel" width={50} height={50} className="h-10 md:h-14" />
             </div>
+            
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 md:gap-6 mt-4">
+              <Image src="/icons/powerpoint.svg" alt="PowerPoint" width={50} height={50} className="h-10 md:h-14" />
+              <Image src="/icons/tableau2.svg" alt="Tableau" width={50} height={50} className="h-10 md:h-14" />
+              <Image src="/icons/flourish.svg" alt="Flourish" width={50} height={50} className="h-10 md:h-14" />
+              <Image src="/icons/datawrapper.svg" alt="Datawrapper" width={50} height={50} className="h-10 md:h-14" />
+            </div>
+          </div>
 
-            <div>
-          <h2 className="text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
-            Education
-          </h2>
-          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
-            MSc in Energy & Climate Policy - <strong>University of Sussex</strong>
-          </p>
-          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
-            BA in Government & Public Policy - <strong>Universidad Panamericana</strong>
-          </p>
-          <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
-            BSc in Economics - <strong>Universidad Panamericana</strong>
-          </p>
+          <div className="mt-8">
+            <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
+              Roles
+            </h2>
+            <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
+              <li>Public Policy Researcher/Analyst</li>
+              <li>Consultant</li>
+              <li>Data Analyst</li>
+            </ul>
+          </div>
+
+          <div className="mt-8">
+            <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
+              Education
+            </h2>
+            <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
+              MSc in Energy & Climate Policy - <strong>University of Sussex</strong>
+            </p>
+            <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
+              BA in Government & Public Policy - <strong>Universidad Panamericana</strong>
+            </p>
+            <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
+              BSc in Economics - <strong>Universidad Panamericana</strong>
+            </p>
+          </div>
         </div>
-      </div>
-    </div>
   </motion.section>
 </div>
       
       {/* Bottom Navigation Bar */}
       <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
         <div className="flex space-x-6">
-          <Image src="/icons/mail2.svg" alt="Mail" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
-          <span>santiagomong@gmail.com</span>
+          <Image src="/icons/mail2.svg" alt="Mail" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+          <a href="mailto:santiagomong@gmail.com" className="hover:underline">
+            santiagomong@gmail.com
+          </a>
         </div>
         <div className="flex items-center space-x-2">
-          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
-          <span>+1-(346)-823-0454</span>
+          <Image src="/icons/phone3.svg" alt="Phone" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
+          <a href="tel:+13468230454" className="hover:underline">
+            +1-(346)-823-0454
+          </a>
         </div>
       </footer>
     </>
