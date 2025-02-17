@@ -143,19 +143,21 @@ export default function Home() {
             <p className="text-dark mt-2 leading-relaxed text-justify text-sm md:text-base">
               Fully <strong>authorized to work in the U.S.</strong>
             </p>
+            
+            <div className="mt-8">
+              <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
+                Roles
+              </h2>
+              <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
+                <li>Public Policy Researcher/Analyst</li>
+                <li>Research Associate</li>
+                <li>Economics Consultant</li>
+                <li>Data Analyst</li>
+              </ul>
+            </div>
           </div>
 
-          <div className="mt-8">
-            <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
-              Roles
-            </h2>
-            <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
-              <li>Public Policy Researcher/Analyst</li>
-              <li>Research Associate</li>
-              <li>Economics Consultant</li>
-              <li>Data Analyst</li>
-            </ul>
-          </div>
+        
 
           {/* Right Column - My Approach to Work */}
           <div>
