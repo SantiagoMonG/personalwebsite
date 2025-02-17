@@ -201,6 +201,13 @@ export default function Resume() {
           <strong> reduce greenhouse gas emissions</strong> and promote sustainable energy. Used Python (Pandas, Geopandas) 
           and Excel for data modeling and geospatial analysis.
         </p>
+        <p className="text-sm md:text-base text-gray-700 mt-2">
+          Mainly involved in the electromobility part of the project, focused on promoting electric mobility through various 
+          public policy instruments, fiscal incentives, and improvements in charging infrastructure. 
+          My work aimed to reduce emissions in the transportation sector and encourage the adoption of electric vehicles (BEVs and PHEVs) 
+          through integrated measures addressing both supply and demand: subsidy strategies for EV purchases, deployment of charging stations, 
+          and assessing the fiscal impact of different incentive mechanisms.
+        </p>
         <iframe
           src="https://1drv.ms/p/s!AlTYd39_V2-QjKUiBapifGHLtDbsYQ?embed=1&amp;em=2&amp;wdAr=1.7777777777777777"
           title="Implementation of Fiscal Policies Presentation"
@@ -219,7 +226,7 @@ export default function Resume() {
         Evaluation of the Fiscal Instrument for Social and Environmental Damage from Hydrocarbon Extraction
         </h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
-          Assessed the fiscal instrument designed to <strong>mitigate environmental and social damage</strong> 
+          Assessed the fiscal instrument designed to <strong>mitigate environmental and social damage </strong> 
           from hydrocarbon extraction. Used Python and Excel for financial modeling and policy evaluation.
         </p>
         <iframe
@@ -239,7 +246,7 @@ export default function Resume() {
         <h3 className="text-lg md:text-xl font-semibold">Minimum Storage of Petroleum Products Policy</h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
           Analyzed compliance challenges for private oil companies with Mexico&apos;s 
-          <strong>Minimum Storage of Petroleum Products Policy</strong>. Assessed market barriers and storage constraints.
+          <strong> Minimum Storage of Petroleum Products Policy</strong>. Assessed market barriers and storage constraints.
         </p>
        <iframe
           src="https://1drv.ms/p/s!AlTYd39_V2-QjKUkPdmg2XJJid2apQ?embed=1&amp;em=2&amp;wdAr=1.7777777777777777"
