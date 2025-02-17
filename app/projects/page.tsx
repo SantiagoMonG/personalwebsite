@@ -84,13 +84,13 @@ export default function Resume() {
 {/* Social Links */}
 <div className="flex justify-center space-x-4 md:space-x-6 mt-4 md:mt-6">
   <Link href="https://substack.com/@samongom" target="_blank">
-    <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 transition duration-300" />
+    <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:scale-110 transition duration-300" />
   </Link>
   <Link href="https://github.com/santiagomong" target="_blank">
-    <Image src="/icons/github.svg" alt="GitHub" width={36} height={36} className="hover:invert hover:scale-110 transition duration-300" />
+    <Image src="/icons/github.svg" alt="GitHub" width={36} height={36} className="hover:scale-110 transition duration-300" />
   </Link>
   <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-    <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 transition duration-300" />
+    <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="invert hover:scale-110 transition duration-300" />
   </Link>
 </div>
 
@@ -226,8 +226,10 @@ export default function Resume() {
         Evaluation of the Fiscal Instrument for Social and Environmental Damage from Hydrocarbon Extraction
         </h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
-          Assessed the fiscal instrument designed to <strong>mitigate environmental and social damage </strong> 
-          from hydrocarbon extraction. Used Python and Excel for financial modeling and policy evaluation.
+        Project for Mexico&apos;s Treasury Ministry. Evaluated Mexico&apos;s IAEEH tax and compensation fund to assess their effectiveness in <strong>addressing environmental and social damage from hydrocarbon extraction.</strong> 
+        </p>
+        <p className="text-sm md:text-base text-gray-700 mt-2">
+         Analyzed fiscal policies, identified inefficiencies in fund allocation, and proposed reforms to improve transparency and ensure resources were better aligned with actual environmental costs. 
         </p>
         <iframe
           src="https://1drv.ms/p/s!AlTYd39_V2-QjKUgwt3rrOk2Heei3g?embed=1&amp;em=2&amp;wdAr=1.7777777777777777"

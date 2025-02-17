@@ -82,7 +82,7 @@ export default function Resume() {
         degrees in <strong>economics & government/public policy</strong>. Writes and researches about emerging
         technologies, trade, energy economics, and global economic policy. Proficient in data visualization, economic
         modeling, and policy research, using <strong>Excel, STATA, and Python</strong>. 
-        Fluent in <strong>Spanish, English, and French.</strong>
+        Fluent in <strong>Spanish, English, and French. </strong>
         Fully <strong>authorized to work in the U.S.</strong>
 
         </p>
@@ -292,13 +292,13 @@ export default function Resume() {
       <footer className="w-full text-dark py-6 mt-8 flex flex-col items-center space-y-3 md:flex-row md:justify-between md:px-12">
         <div className="flex space-x-6 mb-4 md:mb-0">
           <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-            <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://github.com/santiagomong" target="_blank">
-            <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/github.svg" alt="GitHub" width={40} height={40} className="hover:scale-110 filter transition duration-300" />
           </Link>
           <Link href="https://substack.com/@samongom" target="_blank">
-            <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:invert hover:scale-110 filter transition duration-300" />
+            <Image src="/icons/substack2.svg" alt="Substack" width={36} height={36} className="hover:scale-110 filter transition duration-300" />
           </Link>
         </div>
               <div className="flex items-center space-x-2">

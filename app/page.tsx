@@ -145,6 +145,18 @@ export default function Home() {
             </p>
           </div>
 
+          <div className="mt-8">
+            <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
+              Roles
+            </h2>
+            <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
+              <li>Public Policy Researcher/Analyst</li>
+              <li>Research Associate</li>
+              <li>Economics Consultant</li>
+              <li>Data Analyst</li>
+            </ul>
+          </div>
+
           {/* Right Column - My Approach to Work */}
           <div>
             <h2 className="text-2xl md:text-3xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
@@ -173,18 +185,6 @@ export default function Home() {
               <Image src="/icons/flourish.svg" alt="Flourish" width={50} height={50} className="h-10 md:h-14" />
               <Image src="/icons/datawrapper.svg" alt="Datawrapper" width={50} height={50} className="h-10 md:h-14" />
             </div>
-          </div>
-
-          <div className="mt-8">
-            <h2 className="text-2xl font-lato font-bold text-dark border-b-2 border-dark pb-2">
-              Roles
-            </h2>
-            <ul className="list-disc list-inside text-dark mt-2 leading-relaxed text-justify space-y-2 text-sm md:text-base">
-              <li>Public Policy Researcher/Analyst</li>
-              <li>Research Associate</li>
-              <li>Economics Consultant</li>
-              <li>Data Analyst</li>
-            </ul>
           </div>
 
           <div className="mt-8">
