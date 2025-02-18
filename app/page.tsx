@@ -69,7 +69,6 @@ export default function Home() {
         <li><Link href="/#about" onClick={handleAboutClick} className="hover:underline">About</Link></li>
         <li><Link href="/resume" className="hover:underline">Resume</Link></li>
         <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
-        <li><Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link></li>
        </ul>
 
        <div className="md:hidden text-center">
@@ -81,7 +80,6 @@ export default function Home() {
            <li><Link href="/#about" onClick={handleAboutClick} className="block py-1">About</Link></li>
            <li><Link href="/resume" className="block py-1">Resume</Link></li>
            <li><Link href="/projects" className="block py-1">Slides, Charts & Projects</Link></li>
-           <li><Link href="https://substack.com/@samongom" target="_blank" className="block py-1">Substack</Link></li>
           </ul>
         )}
       </div>

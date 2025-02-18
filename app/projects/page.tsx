@@ -6,6 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { TypeAnimation } from "react-type-animation";
 
 export default function Resume() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,9 +43,21 @@ export default function Resume() {
         >
           Santiago Monroy
         </motion.h1>
-        <h2 className="flex items-center space-x-1 md:space-x-2 mt-1 md:mt-2 text-center">
-          Data Analysis | Economics | Energy & Technology Policy
-        </h2>
+        <motion.div
+          className="flex items-center space-x-1 md:space-x-2 mt-1 md:mt-2 text-center"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+        >
+          <TypeAnimation
+            sequence={[
+              "Data Analysis | Economics | Energy & Technology Policy", 3000
+            ]}
+            wrapper="h2"
+            className="text-lg md:text-2xl font-montserrat text-gray-600 font-semibold"
+            repeat={0}
+          />
+        </motion.div>
       </div>
 
       {/* Navbar Below Name */}
@@ -53,7 +66,6 @@ export default function Resume() {
         <li><Link href="/#about" onClick={handleAboutClick} className="hover:underline">About</Link></li>
         <li><Link href="/resume" className="hover:underline">Resume</Link></li>
         <li><Link href="/projects" className="hover:underline">Slides, Charts & Projects</Link></li>
-        <li><Link href="https://substack.com/@samongom" target="_blank" className="hover:underline">Substack</Link></li>
        </ul>
 
        <div className="md:hidden text-center">
@@ -65,7 +77,6 @@ export default function Resume() {
            <li><Link href="/#about" onClick={handleAboutClick} className="block py-1">About</Link></li>
            <li><Link href="/resume" className="block py-1">Resume</Link></li>
            <li><Link href="/projects" className="block py-1">Slides, Charts & Projects</Link></li>
-           <li><Link href="https://substack.com/@samongom" target="_blank" className="block py-1">Substack</Link></li>
           </ul>
         )}
       </div>
