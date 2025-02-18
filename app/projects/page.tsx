@@ -90,7 +90,7 @@ export default function Resume() {
     <Image src="/icons/github.svg" alt="GitHub" width={36} height={36} className="hover:scale-110 transition duration-300" />
   </Link>
   <Link href="https://www.linkedin.com/in/santiago-mongom" target="_blank">
-    <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="invert hover:scale-110 transition duration-300" />
+    <Image src="/icons/linkedin3.svg" alt="LinkedIn" width={40} height={40} className="hover:scale-110 transition duration-300" />
   </Link>
 </div>
 
@@ -129,24 +129,6 @@ export default function Resume() {
       </div>
     </div>
 
-    {/* Energy Policy: Mexico’s EV Transition */}
-    <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
-      <h3 className="text-lg md:text-xl font-semibold">Science, Technology & Innovation</h3>
-      <p className="text-sm md:text-base text-gray-700 mt-2">
-        This essay explores Mexico&apos;s transition from manufacturing internal combustion engine (ICE) vehicles to electric vehicles (EVs) in the context of global market trends and innovation policies.
-      </p>
-      <a href="innovation.pdf" download className="underline text-blue-800 hover:font-bold mt-2">Download PDF</a>
-    </div>
-
-    {/* Governing Energy Transitions */}
-    <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
-      <h3 className="text-lg md:text-xl font-semibold">Governing Energy Transitions</h3>
-      <p className="text-sm md:text-base text-gray-700 mt-2">
-        This essay explores the United States&apos; transition to electric vehicles (EVs) under the Biden administration, focusing on governance challenges and political dynamics.
-      </p>
-      <a href="/governing.pdf" download className="underline text-blue-800 hover:font-bold mt-2">Download PDF</a>
-    </div>
-
     {/* Electric Vehicles and Critical Minerals */}
     <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
       <h3 className="text-lg md:text-xl font-semibold">Electric Vehicles and Critical Minerals</h3>
@@ -181,6 +163,30 @@ export default function Resume() {
 
   </div>
 </section>
+
+<section className="mt-8 md:mt-12 px-4 md:px-6">
+
+  {/* Grid Layout for Projects */}
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 mt-6">
+        {/* Energy Policy: Mexico’s EV Transition */}
+    <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
+      <h3 className="text-lg md:text-xl font-semibold">Science, Technology & Innovation</h3>
+      <p className="text-sm md:text-base text-gray-700 mt-2">
+        This essay explores Mexico&apos;s transition from manufacturing internal combustion engine (ICE) vehicles to electric vehicles (EVs) in the context of global market trends and innovation policies.
+      </p>
+      <a href="innovation.pdf" download className="underline text-blue-800 hover:font-bold mt-2">Download PDF</a>
+    </div>
+
+    {/* Governing Energy Transitions */}
+    <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
+      <h3 className="text-lg md:text-xl font-semibold">Governing Energy Transitions</h3>
+      <p className="text-sm md:text-base text-gray-700 mt-2">
+        This essay explores the United States&apos; transition to electric vehicles (EVs) under the Biden administration, focusing on governance challenges and political dynamics.
+      </p>
+      <a href="/governing.pdf" download className="underline text-blue-800 hover:font-bold mt-2">Download PDF</a>
+    </div>
+  </div>
+</section> 
 
 {/* Professional Projects Section */}
   <section className="mt-8 md:mt-12 px-4 md:px-6">
