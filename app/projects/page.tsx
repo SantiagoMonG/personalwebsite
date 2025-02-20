@@ -107,10 +107,47 @@ export default function Resume() {
 
 {/* Academic Projects Section */}
 <section className="mt-8 md:mt-12 px-4 md:px-6">
+  <h2 className="text-2xl md:text-3xl font-bold font-montserrat">Personal Projects</h2>
+
+  {/* Grid Layout for Projects */}
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1 mt-6">
+    
+    {/* Personal Project */}
+    <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
+      <h3 className="text-lg md:text-xl font-semibold">
+        Oil Prices Collapse 2014
+      </h3>
+      <p className="text-sm md:text-base text-gray-700 mt-2">
+        This presentation is based on the analyses from James Hamilton&apos;s article, “Oil Prices as an Indicator of Global Economic Conditions,” and Ben Bernanke&apos;s post, “The Relationship Between Stocks and Oil Prices.” It is a recreation of the regression models used by Hamilton and Bernanke, with the data collected and the analyses remade to visualize the trends they identified.
+      </p>
+      <p className="text-sm md:text-base text-gray-700 mt-2">
+        The goal of this presentation is to explain the key findings of their papers in a clear and engaging way, while also showcasing my ability to understand complex economic concepts, perform statistical analyses, and effectively communicate results through data visualization.
+      </p>
+      <iframe
+        src="https://flo.uri.sh/story/2918714/embed"
+        title="Flourish Visualization"
+        width="100%"
+        height="400"
+        frameBorder="0"
+        scrolling="no"
+        className="mt-4 max-w-full"
+        allowFullScreen
+      ></iframe>
+      <div className="flex flex-col space-y-2 mt-4">
+        <a href="https://public.flourish.studio/story/2918714/" target="_blank" className="underline text-blue-800 hover:font-bold">Flourish Presentation</a>
+        <a href="https://github.com/SantiagoMonG/oil-changes-analysis" target="_blank" className="underline text-blue-800 hover:font-bold">Regression data</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+{/* Academic Projects */}
+<section className="mt-8 md:mt-12 px-4 md:px-6">
   <h2 className="text-2xl md:text-3xl font-bold font-montserrat">Academic Projects</h2>
 
   {/* Grid Layout for Projects */}
-  <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 mt-6">
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-1 lg:grid-cols-1 mt-6">
     
     {/* Master's Thesis */}
     <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
@@ -139,6 +176,15 @@ export default function Resume() {
         <a href="https://zenodo.org/records/14529054" target="_blank" className="underline text-blue-800 hover:font-bold">View Code</a>
       </div>
     </div>
+
+  </div>
+</section>
+
+<section className="mt-8 md:mt-12 px-4 md:px-6">
+  <h2 className="text-2xl md:text-3xl font-bold font-montserrat">Academic Projects</h2>
+
+  {/* Grid Layout for Projects */}
+  <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2 mt-6">
 
     {/* Electric Vehicles and Critical Minerals */}
     <div className="border border-gray-300 rounded-lg p-4 md:p-6 shadow-lg">
