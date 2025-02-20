@@ -123,16 +123,17 @@ export default function Resume() {
       <p className="text-sm md:text-base text-gray-700 mt-2">
         The goal of this presentation is to explain the key findings of their papers in a clear and engaging way, while also showcasing my ability to understand complex economic concepts, perform statistical analyses, and effectively communicate results through data visualization.
       </p>
-      <iframe
-        src="https://flo.uri.sh/story/2918714/embed"
-        title="Flourish Visualization"
-        width="100%"
-        height="400"
-        frameBorder="0"
-        scrolling="no"
-        className="mt-4 max-w-full"
-        allowFullScreen
-      ></iframe>
+      <div className="relative pt-[56.25%] w-full mt-4"> 
+        <iframe
+          src="https://flo.uri.sh/story/2918714/embed"
+          title="Flourish Visualization"
+          frameBorder="0"
+          scrolling="no"
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          allowFullScreen
+        ></iframe>
+      </div>
+      
       <div className="flex flex-col space-y-2 mt-4">
         <a href="https://public.flourish.studio/story/2918714/" target="_blank" className="underline text-blue-800 hover:font-bold">Flourish Presentation</a>
         <a href="https://github.com/SantiagoMonG/oil-changes-analysis" target="_blank" className="underline text-blue-800 hover:font-bold">Regression data</a>
