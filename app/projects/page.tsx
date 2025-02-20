@@ -161,16 +161,16 @@ export default function Resume() {
         <li>Analysis of macroeconomic changes and financial constraints on LCOE reductions.</li>
         <li>Projections of financing scenarios for 2024-2029 and their impact on solar PV projects.</li>
       </ul>
-      <iframe
-        src="https://flo.uri.sh/story/2529885/embed"
-        title="Flourish Visualization"
-        width="100%"
-        height="400"
-        frameBorder="0"
-        scrolling="no"
-        className="mt-4 max-w-full"
-        allowFullScreen
-      ></iframe>
+        <div className="relative pt-[56.25%] w-full mt-4"> 
+        <iframe
+          src="https://flo.uri.sh/story/2529885/embed"
+          title="Flourish Visualization"
+          frameBorder="0"
+          scrolling="no"
+          className="absolute top-0 left-0 w-full h-full rounded-lg"
+          allowFullScreen
+        ></iframe>
+      </div>
       <div className="flex flex-col space-y-2 mt-4">
         <a href="thesis.pdf" download className="underline text-blue-800 hover:font-bold">Download Thesis</a>
         <a href="risksratesrays.pdf" download className="underline text-blue-800 hover:font-bold">Download Article Under Review</a>
