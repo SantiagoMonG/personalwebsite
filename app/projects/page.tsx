@@ -261,8 +261,7 @@ export default function Resume() {
         Implementation of Fiscal Policies to Strengthen Mexico&apos;s Climate Change Mitigation Efforts
         </h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
-          Project for Mexico&apos;s Treasury Ministry. Led a team of two consultants to design fiscal policies to 
-          <strong> reduce greenhouse gas emissions</strong> and promote sustainable energy. Used Python (Pandas, Geopandas) 
+          Assessment of fiscal policies to <strong> reduce greenhouse gas emissions</strong> and promote sustainable energy. Used Python (Pandas, Geopandas) 
           and Excel for data modeling and geospatial analysis.
         </p>
         <p className="text-sm md:text-base text-gray-700 mt-2">
@@ -290,7 +289,7 @@ export default function Resume() {
         Evaluation of the Fiscal Instrument for Social and Environmental Damage from Hydrocarbon Extraction
         </h3>
         <p className="text-sm md:text-base text-gray-700 mt-2">
-        Project for Mexico&apos;s Treasury Ministry. Evaluated Mexico&apos;s IAEEH tax and compensation fund to assess their effectiveness in <strong>addressing environmental and social damage from hydrocarbon extraction.</strong> 
+        Evaluation of Mexico&apos;s IAEEH tax and compensation fund to assess their effectiveness in <strong>addressing environmental and social damage from hydrocarbon extraction.</strong> 
         </p>
         <p className="text-sm md:text-base text-gray-700 mt-2">
          Analyzed fiscal policies, identified inefficiencies in fund allocation, and proposed reforms to improve transparency and ensure resources were better aligned with actual environmental costs. 
