@@ -123,7 +123,7 @@ export default function Resume() {
       <p className="text-sm md:text-base text-gray-700 mt-2">
         The goal of this presentation is to explain the key findings of their papers in a clear and engaging way, while also showcasing my ability to understand complex economic concepts, perform statistical analyses, and effectively communicate results through data visualization.
       </p>
-      <div className="relative pt-[56.25%] w-full mt-4"> 
+      <div className="relative pt-[75%] md:pt-[56.25%] w-full mt-4"> 
         <iframe
           src="https://flo.uri.sh/story/2918714/embed"
           title="Flourish Visualization"
@@ -161,7 +161,7 @@ export default function Resume() {
         <li>Analysis of macroeconomic changes and financial constraints on LCOE reductions.</li>
         <li>Projections of financing scenarios for 2024-2029 and their impact on solar PV projects.</li>
       </ul>
-        <div className="relative pt-[56.25%] w-full mt-4"> 
+        <div className="relative pt-[75%] md:pt-[56.25%] w-full mt-4"> 
         <iframe
           src="https://flo.uri.sh/story/2529885/embed"
           title="Flourish Visualization"
